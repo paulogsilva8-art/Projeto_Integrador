@@ -4,43 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carne com queijo</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Pedidos</title>
 </head>
 
 <body>
-    <img src="img/carneequeijo2.jpg" width="500" height="350" align="left" alt="decrição">
-    <h2>
-        <p>Este hambúrguer artesanal é feito com pão macio e levemente tostado, hambúrguer de carne bovina grelhado e
-            uma generosa camada de queijo derretido. Na base, há um molho cremoso que complementa o lanche, criando uma
-            combinação simples, suculenta e cremosa.</p>
-    </h2>
-    <h3>
-        <p>
-            Para mais informações realize seu login
-        </p>
-    </h3>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div align="center">
-        <form method="post" action="#"></form>
-        <fieldset>
-            <legend>LOGIN</legend>
-            <label>Email</label>
-            <input type="email" id="email" name="email" placeholder="seu@email.com" />
-            <label>Login</label>
-            <input type="password" name="senha" placeholder="sua senha" />
-        </fieldset>
-        <br>
-        <button type="submit">Login</button>
+        <img src="img/Faça seu pedido.jpeg" style="width: 100%; height: 20%;" alt="banner">
+        <hr>
     </div>
-    <!--Botão de fazer o pedido, tem em todos os lanches-->
-    <a href="pedidos.html">
-        <button>🍔 Fazer Pedido</button>
-    </a>
+    <div>
+        <form>
+
+            <label>Nome</label>
+            <input type="text" name="nome" required>
+
+            <label>Telefone</label>
+            <input type="tel" name="telefone" required>
+
+            <label>Escolha seu Hambúrguer</label>
+            <select name="hamburguer">
+                <option>Brie Burger</option>
+                <option>Carne e Queijo</option>
+                <option>Catupiry com Bacon</option>
+                <option>Pingue Chicken</option>
+                <option>Quatro Queijos</option>
+                <option>Queijo Coalho</option>
+            </select>
+
+            <label>Escolha seu Combo</label>
+            <select name="Combo">
+                <option>Combo 1</option>
+                <option>Combo 2</option>
+                <option>Combo 3</option>
+            </select>
+            <br>
+            <label>Adicionais</label>
+            <br>
+            <input type="checkbox" name="extra" value="bacon"> Bacon extra<br>
+            <input type="checkbox" name="extra" value="ovo"> Queijo extra<br>
+            <input type="checkbox" name="extra" value="cebola"> Cebola caramelizada<br><br>
+
+            <label>Bebida</label>
+            <select name="bebida">
+                <option>Água</option>
+                <option>Long neck</option>
+                <option>Refrigerante</option>
+                <option>Suco</option>
+            </select>
+
+            <label>Endereço para entrega</label>
+            <input type="text" name="endereco">
+
+            <label>Observações</label>
+            <textarea rows="3" placeholder="Ex: tirar cebola..."></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+    </div>
+    </form>
     <br>
     <br>
     <br>
@@ -48,26 +68,10 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--Rodapé-->
+
     <footer>
         <hr>
+        <!-- Tabela para organizar as informações do rodapé -->
         <table>
             <thead>
                 <tr>
@@ -88,7 +92,7 @@
             <tbody>
                 <tr>
                     <td> </td>
-                    <td><a href="index.html" style="text-decoration: none;">INICIO</a></td>
+                    <td><a href="index.html" style="text-decoration: none;">INÍCIO</a></td>
                     <td><a href="https://wa.me/14998387107" target="_blank">ENTRE EM CONTATO</a></td>
                     <td>@artenachapa</td>
                 </tr>
@@ -98,7 +102,7 @@
                 </tr>
                 <tr>
                     <td> </td>
-                    <td><a href="index.html" style="text-decoration: none;">MENU</a></td>
+                    <td><a href="#rodapé" style="text-decoration: none;">MENU</a></td>
                 </tr>
                 <tr>
                     <td> </td>
@@ -118,9 +122,6 @@
                 </tr>
             </tbody>
         </table>
-        </section>
-
-    </footer>
 </body>
 
 </html>
