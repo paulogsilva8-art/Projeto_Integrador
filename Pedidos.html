@@ -16,7 +16,7 @@
 
         /* Fundo geral */
         body {
-            background-color: #f5f5f5;
+            background-color: rgb(237, 232, 221);
         }
 
         /* Banner */
@@ -28,21 +28,25 @@
             color: white;
             text-align: center;
             padding: 60px 20px;
+            margin-bottom: 50px;
         }
 
         .banner h1 {
-            font-size: 70px;
+            font-size: 80px;
             letter-spacing: 5px;
         }
-
+        
+         form {
+            width: 100%;
+            padding: 30px 50px;
+        }
         /* Container do formulário */
         .container {
             background: white;
             max-width: 900px;
-            margin: -40px auto 40px;
+            margin: auto;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
 
         /* Títulos */
@@ -74,11 +78,13 @@
         /* Linha (nome + telefone lado a lado) */
         .linha {
             display: flex;
-            gap: 15px;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .linha div {
             flex: 1;
+            min-width: 200px;
         }
 
         /* Adicionais */
@@ -86,12 +92,19 @@
             margin: 15px 0;
         }
 
+        .area-final {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-end;
+        }
+
         .adicionais label {
             display: block;
             margin-bottom: 10px;
             cursor: pointer;
         }
-        
+
 
         /* Botão */
         button {
@@ -111,16 +124,10 @@
             transform: scale(1.02);
         }
 
-        /* Responsivo */
-        @media (max-width: 600px) {
-            .linha {
-                flex-direction: column;
-            }
-
-            .banner h1 {
-                font-size: 40px;
-            }
+        .rodapé{
+            background-color:hsl(0, 0%, 100%);
         }
+        
     </style>
 </head>
 
@@ -168,21 +175,26 @@
                 <label><input type="checkbox"> Cebola caramelizada</label>
             </div>
 
-                <label0><h2>Bebidas</h2></label>
-                    <select>
-                        <option>Água</option>
-                        <option>Suco</option>
-                        <option>Refrigerante</option>
-                        <option>Cerveja</option>
-                    </select>
+            <label0>
+                <h2>Bebidas</h2></label>
+                <select>
+                    <option>Água</option>
+                    <option>Suco</option>
+                    <option>Refrigerante</option>
+                    <option>Cerveja</option>
+                </select>
 
-            <label><h2>Endereço para entrega</h2></label>
-            <input type="text">
+                <label>
+                    <h2>Endereço para entrega</h2>
+                </label>
+                <input type="text">
 
-            <label><h2>Observações</h2></label>
-            <textarea placeholder="Ex: tirar cebola..."></textarea>
+                <label>
+                    <h2>Observações</h2>
+                </label>
+                <textarea placeholder="Ex: tirar cebola..."></textarea>
 
-            <button>Enviar Pedido</button>
+                <button>Enviar Pedido</button>
 
         </form>
     </div>
@@ -196,6 +208,8 @@
 
     <footer>
         <hr>
+
+        <div class="rodapé">
         <!-- Tabela para organizar as informações do rodapé -->
         <table>
             <thead>
@@ -247,6 +261,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
 </body>
 
 </html>
