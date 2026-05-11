@@ -6,119 +6,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>combos</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Estilo.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("img/fundo.png");
+            
+        }
+
+        .banner {
+            background: linear-gradient(rgba(180, 0, 0, 0.422), rgba(180, 0, 0, 0.614)),
+                url('img/fundo\ do\ banner.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .banner h1 {
+            font-size: 70px;
+            letter-spacing: 5px;
+        }
+
+
+        .conteiner_combos {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+    
+
+        }
+
+        .itens_cont {
+            width: 30%;
+            background-color: #970102;
+            border-radius: 10px;
+        }
+
+        .itens_cont img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .text_ite {
+            padding: 20px;
+        }
+
+        .text_ite h2 {
+            text-align: center;
+            color: antiquewhite;
+        }
+         .text_ite h3 {
+            text-align: center;
+            color: antiquewhite;
+         }
+         .text_ite p {
+            color: #faebd7;
+         }
+         .text_ite ul{
+            color: antiquewhite;
+            background-color: rgba(6, 39, 59, 0.255);
+            border-radius: 10px;
+            
+         }
+          .text_ite li{
+             line-height: 1.5;
+             border-radius: 10px;
+          }
+          summary{
+            list-style: none;
+            cursor: pointer;
+          }
+          ul{
+            list-style-type: none;
+          }
+          h1{
+            color: antiquewhite;
+          }
+    </style>
 </head>
 
 <body>
-    <img src="IMG/Arte na chapa (Banner (horizontal)) 2.png" style="width: 100%;height: 20%;" alt="banner">
+    <header>
+        <div class="banner">
+            <h1>COMBOS</h1>
+        </div>
+    </header>
+    <main>
+        <div class="conteiner_combos">
 
-    <div align="center">
-        <table>
-            <tr>
-                <th><img src="img/combo-2.jpg" width="350" height="500" alt="descrição"></th>
-                <th><img src="img/combo.jpg" width="350" height="500" alt="descrição"></th>
-                <th><img src="img/combo 3.jpg" width="350" height="500" alt="descrição"></th>
+            <div class="itens_cont">
 
-            </tr>
-            <tr align="center">
-                <td>
-                    <h3>combo 1</h3>
-                </td>
-                <td>
-                    <h3>Combo 2</h3>
-                </td>
-                <td>
-                    <h3>Combo 3</h3>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p> Um hambúrguer artesanal suculento, servido no pão brioche macio, com queijo derretido e
-                        ingredientes frescos que garantem sabor em cada mordida. Ao lado, um refrigerante bem gelado
-                        para refrescar e completar a experiência</p>
-                    <ul>
-                        <li>hamburguer 180g</li>
-                        <li>Lata de refrigerante</li>
-                    </ul>
+                <img src="img/combo.jpg">
+                <div class="text_ite">
+                    <h2>
+                        COMBO 1
+                    </h2>
+                    <P> Um hambúrguer artesanal suculento, servido no pão brioche macio, com queijo derretido e ingredientes frescos que garantem sabor em cada mordida.
+                    </P>
+                    <details>
+                        <summary><h3>CLIQUE PARA VER OS INGREDIENTES</h3></summary>
+                        <ul>
+                            <li>hamburguer 120g </li>
+                            <li> Lata de refrigerante </li>
+                            <li>porção de batata fritas </li>
+                        </ul>
+                    </details>
+                </div>
 
-                </td>
-                <td>
-                    <p> Um hambúrguer artesanal suculento, no pão brioche macio,
-                        com queijo derretido e sabor que conquista na primeira mordida.
-                        Ao lado, fritas douradas e crocantes, o par perfeito para completar a experiência.</p>
+            </div>
+
+
+            <div class="itens_cont">
+                <img src="img/combo-2.jpg">
+                <div class="text_ite">
+                    <h2>
+                        COMBO 2
+                    </h2>
+                    <P>Um hambúrguer artesanal suculento, no pão brioche macio, com queijo derretido e sabor que conquista na primeira mordida. Você merece essa explosão de sabor!
+                    </P>
+                   
+                    <details>
+                        <summary><h3>CLIQUE PARA VER OS INGREDIENTES</h3></summary>
+                        <ul>
+                            <li>hamburguer 180g </li>
+                            <li> Lata de refrigerante </li>
+                            <li>porção de batata fritas </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="itens_cont">
+                <img src="img/combo 3.jpg">
+                <div class="text_ite">
+                    <h2>
+                        COMBO 3
+                    </h2>
+                <P>Dois hambúrgueres artesanais, duas vezes mais sabor. Pães brioche macios, carnes suculentas grelhadas no ponto certo e queijo derretendo em cada camada. </P>
+                <details>
+                    <summary>
+                        <h3>CLIQUE PARA VER OS INGREDIENTES</h3>
+                    </summary>
                     <ul>
-                        <li>Hambúrguer 200g</li>
-                        <li>Lata de refrigerante</li>
-                        <li>porção de batata fritas</li>
+                     <li>Dois hambúrgueres artesanais</li>
+                     <li> Lata de refrigerante </li>
+                     <li>porção de batata fritas </li>
                     </ul>
-                </td>
-                <td>
-                    <p> Dois hambúrgueres artesanais, duas vezes mais sabor. Pães brioche macios, carnes suculentas
-                        grelhadas no ponto certo e queijo derretendo em cada camada. Um combo feito para quem não quer
-                        escolher entre um ou outro — porque quando o hambúrguer é bom de verdade, um só nunca é
-                        suficiente</p>
-                    <ul>
-                        <li>Dois hambúrgueres artesanais</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <!--Rodapé-->
+                </details>
+            </div>
+
+    </main>
+    <br>
+   
     <footer>
-        <hr>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <div align="left"> <img src="img/arteimg.png " width="200" height="150">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </div>
-                    </th>
-                    <th>INSTITUCIONAL
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </th>
-                    <th>ENTRE EM CONTATO
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </th>
-                    <th>REDES SOCIAIS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> </td>
-                    <td><a href="index.html" style="text-decoration: none;">INICIO</a></td>
-                    <td><a href="https://wa.me/14998387107" target="_blank">ENTRE EM CONTATO</a></td>
-                    <td>@artenachapa</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="quemsomos.html" style="text-decoration: none;">QUEM SOMOS</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="index.html" style="text-decoration: none;">MENU</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="maispedidos.html" style="text-decoration: none;">BEBIDAS</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="combos.html" style="text-decoration: none;">COMBOS</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="nivernachapa.html" style="text-decoration: none">NIVER NA CHAPA</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="Pedidos.html" style="text-decoration: none;">SEUS PEDIDOS</a></td>
-                </tr>
-            </tbody>
-        </table>
-        </section>
+
+        <div class="container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="img/Logo.png" width="100px" height="60px" alt="Arte na Chapa">
+
+                <h2>ARTE NA CHAPA</h2>
+
+                <p>Hamburgueria</p>
+            </div>
+
+            <!-- Institucional -->
+            <div class="coluna">
+                <h3>INSTITUCIONAL</h3>
+
+                <ul>
+                    <li><a href="#">INÍCIO</a></li>
+                    <li><a href="#">QUEM SOMOS</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">BEBIDAS</a></li>
+                    <li><a href="#">COMBOS</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato -->
+            <div class="coluna">
+                <h3>ENTRE EM CONTATO</h3>
+
+                <a href="#">ENTRE EM CONTATO</a>
+            </div>
+
+            <!-- Redes -->
+            <div class="coluna">
+                <h3>REDES SOCIAIS</h3>
+
+                <p class="social">@artenachapa</p>
+                <img src="img/inst_logo_01.png"whidth="20px" height="20px" alt="Instagram">
+            </div>
+
+
+        </div>
 
     </footer>
-</body>
 
 </html>
