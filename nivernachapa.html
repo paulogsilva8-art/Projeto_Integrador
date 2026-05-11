@@ -1,93 +1,91 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niver na chapa</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Niver na Chapa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2e1e1;
+            background-image: url(img/fundo.png);
+        }
+
+        header {
+            background-color: #b30000;
+            color: white;
+            text-align: center;
+            font-size: 80px;
+            font-weight: bold;
+            padding: 40px 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 50px;
+            margin: 40px;
+        }
+
+        .itens_cont {
+            width: 50%;
+            background-color: #b30000;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .itens_cont img {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .itens_cont h2 {
+            color: rgb(252, 231, 204);
+        }
+
+        .itens_cont ul li {
+            color: antiquewhite;
+        }
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div align="center">
-        <img src="img/imagem.aniversario.png" style="width: 100%; height: 20%;" alt="banner">
-        <hr>
-    </div>
 
+    <header>NIVER NA CHAPA</header>
 
+    <main>
+        <div class="container">
+            <div class="itens_cont">
+                <img src="img/bolo de chocolate.jpg">
+                <details>
+                    <summary>
+                        <h2>Comemore seu aniversário conosco</h2>
+                    </summary>
+                    <ul>
+                        <li>Espaço reservado</li>
+                        <li>Hambúrguer grátis para o aniversariante</li>
+                        <li>Bolo grátis se tiver mais de 5 amigos</li>
+                        <li>Entre em contato pelo WhatsApp: <strong>(14) 99999-9899</strong></li>
+                    </ul>
+                </details>
+            </div>
 
+        </div>
 
-    <div align="center">
-        <h1> Comemore seu aniversário conosco</h1>
-        <table border="0">
-            <td><img src="img/costela.jpg" width="500" height="450">
-            <td><img src="img/bolo.avif" width="500" height="450"></td>
-            <td>
-                <ul>
-                    <li>Espaço reservado</li>
-                    <li>Hambúguer grátis para o aniversariante</li>
-                    <li>Bolo grátis se tiver mais de 5 amigos </li>
-                    <li>Entre em contato pelo WhatsApp: <br><strong>(14) 99999-8989</strong></li>
-                </ul>
-            </td>
-        </table>
-    </div>
-    <!--Rodapé-->
-    <footer>
-        <hr>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <div align="left"> <img src="img/arteimg.png " width="200" height="150">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </div>
-                    </th>
-                    <th>INSTITUCIONAL
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </th>
-                    <th>ENTRE EM CONTATO
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </th>
-                    <th>REDES SOCIAIS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> </td>
-                    <td><a href="index.html" style="text-decoration: none;">INICIO</a></td>
-                    <td><a href="https://wa.me/14998387107" target="_blank">ENTRE EM CONTATO</a></td>
-                    <td>@artenachapa</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="quemsomos.html" style="text-decoration: none;">QUEM SOMOS</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="index.html" style="text-decoration: none;">MENU</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="maispedidos.html" style="text-decoration: none;">BEBIDAS</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="combos.html" style="text-decoration: none;">COMBOS</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="nivernachapa.html" style="text-decoration: none">NIVER NA CHAPA</a></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><a href="Pedidos.html" style="text-decoration: none;">SEUS PEDIDOS</a></td>
-                </tr>
-            </tbody>
-        </table>
-        </section>
+    </main>
 
-    </footer>
 </body>
-
 </html>
+
