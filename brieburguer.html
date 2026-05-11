@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Brie Burger</title>
     <style>
 
-/* RESET */
+        <link rel="stylesheet" href="Style/footer.css">
+
+/* tudinho */
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
     
 }
 
 body{
     background: #f3f3f3;
-    color: #222;
+    color: hsl(0, 0%, 0%);
 }
-
 
 /* HERO */
 
 .hero{
-    
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -32,8 +32,6 @@ body{
     padding: 60px;
     gap: 60px;
 }
-
-
 
 /* IMAGEM */
 
@@ -63,7 +61,7 @@ body{
     font-size: 55px;
     margin-bottom: 25px;
     color: #b30000;
-    /*line-height: 1.1;*/
+    line-height: 1.1;
 }
 
 .hero-text p{
@@ -107,7 +105,6 @@ body{
 
 .form-group input:focus{
     border-color: #b30000;
-    outline: none;
 }
 
 /* BOTÕES */
@@ -124,7 +121,7 @@ body{
     border-radius: 12px;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
+    
     text-decoration: none;
 }
 
@@ -134,7 +131,7 @@ body{
 }
 
 .btn-login:hover{
-    background: #8f0000;
+    background: rgb(143, 0, 0);
 }
 
 .btn-pedido{
@@ -205,8 +202,52 @@ body{
         </div>
 
     </div>
-    
 
-</section>
+    </section>
+     <!-- A partir daq começa o rodapé -->
+    <tfoot>
+
+        <div class="footer-container">
+
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="img/Logo- fundo removido.png" width="30%" height="30%" alt="Arte na Chapa">
+
+                <h2>ARTE NA CHAPA</h2>
+
+                <p>Hamburgueria</p>
+            </div>
+
+            <!-- Institucional -->
+            <div class="footer-coluna">
+                <h3>INSTITUCIONAL</h3>
+
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">BEBIDAS</a></li>
+                    <li><a href="combos.html">COMBOS</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato -->
+            <div class="footer-coluna">
+                <a href="https://wa.me/14998387107" target="_blank"><h3>ENTRE EM CONTATO</h3></a>
+
+                <a href="#">ENTRE EM CONTATO</a>
+            </div>
+
+            <!-- Redes -->
+            <div class="footer-coluna">
+                <h3>REDES SOCIAIS</h3>
+
+                <p class="footer-social">@artenachapa</p>
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>

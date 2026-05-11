@@ -20,6 +20,7 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
 }
 
 .logo {
@@ -28,7 +29,7 @@ h1{
 }
 
 .logo img {
-    width: 80px;
+    width: 80px;    
     margin-bottom: 10px;
 }
 

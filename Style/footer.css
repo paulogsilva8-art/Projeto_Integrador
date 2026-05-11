@@ -76,17 +76,3 @@ footer {
 .footer-social {
     font-size: 18px;
 }
-
-/* Responsivo */
-@media (max-width: 768px) {
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .footer-coluna {
-        width: 100%;
-    }
-}
