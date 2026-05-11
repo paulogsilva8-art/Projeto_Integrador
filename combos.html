@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>combos</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Estilo.css">
     <style>
         body {
             margin: 0;
             padding: 0;
         }
+
         .banner {
             background: linear-gradient(rgba(180, 0, 0, 0.422), rgba(180, 0, 0, 0.614)),
-            url('img/fundo\ do\ banner.png');
+                url('img/fundo\ do\ banner.png');
             background-size: cover;
             background-position: center;
             color: white;
@@ -26,72 +28,137 @@
             letter-spacing: 5px;
         }
 
+
+        .conteiner {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .itens_cont {
+            width: 30%;
+            background-color: #970102;
+            border-radius: 10px;
+        }
+
+        .itens_cont img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .text_ite {
+            padding: 20px;
+        }
+
+        .text_ite h2 {
+            text-align: center;
+            color: antiquewhite;
+        }
+         .text_ite h3 {
+            text-align: center;
+            color: antiquewhite;
+         }
+         .text_ite p {
+            color: antiquewhite;
+         }
+         .text_ite ul{
+            color: antiquewhite;
+            background-color: rgba(6, 39, 59, 0.255);
+            border-radius: 10px;
+            
+         }
+          .text_ite li{
+             line-height: 1.5;
+             border-radius: 10px;
+          }
+          summary{
+            list-style: none;
+            cursor: pointer;
+          }
+          ul{
+            list-style-type: none;
+          }
     </style>
 </head>
 
 <body>
-    <div class="banner">
-        <h1>COMBOS</h1>
-    </div>
-    <div class="exemplo-flex">
-        <table>
-            <tr>
-                <th><img src="img/combo-2.jpg" width="350" height="500" alt="descrição"></th>
-                <th><img src="img/combo.jpg" width="350" height="500" alt="descrição"></th>
-                <th><img src="img/combo 3.jpg" width="350" height="500" alt="descrição"></th>
+    <header>
+        <div class="banner">
+            <h1>COMBOS</h1>
+        </div>
+    </header>
+    <main>
+        <div class="conteiner">
 
-            </tr>
-            <tr align="center">
-                <td>
-                    <h2>combo 1</h2>
-                </td>
-                <td>
-                    <h2>Combo 2</h2>
-                </td>
-                <td>
-                    <h2>Combo 3</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p> Um hambúrguer artesanal suculento, servido no pão brioche macio, com queijo derretido e
-                        ingredientes frescos que garantem sabor em cada mordida. Ao lado, um refrigerante bem gelado
-                        para refrescar e completar a experiência</p>
-                    <ul>
-                        <li>hamburguer 180g</li>
-                        <li>Lata de refrigerante</li>
-                    </ul>
+            <div class="itens_cont">
 
-                </td>
-                <td>
-                    <p> Um hambúrguer artesanal suculento, no pão brioche macio,
-                        com queijo derretido e sabor que conquista na primeira mordida.
-                        Ao lado, fritas douradas e crocantes, o par perfeito para completar a experiência.</p>
+                <img src="img/combo.jpg">
+                <div class="text_ite">
+                    <h2>
+                        COMBO 1
+                    </h2>
+                    <P> Um hambúrguer artesanal suculento, servido no pão brioche macio, com queijo derretido e ingredientes frescos que garantem sabor em cada mordida.
+                    </P>
+                    <details>
+                        <summary><h3>CLIQUE PARA VER OS INGREDIENTES</h3></summary>
+                        <ul>
+                            <li>hamburguer 120g </li>
+                            <li> Lata de refrigerante </li>
+                            <li>porção de batata fritas </li>
+                        </ul>
+                    </details>
+                </div>
+
+            </div>
+
+
+            <div class="itens_cont">
+                <img src="img/combo-2.jpg">
+                <div class="text_ite">
+                    <h2>
+                        COMBO 2
+                    </h2>
+                    <P>Um hambúrguer artesanal suculento, no pão brioche macio, com queijo derretido e sabor que conquista na primeira mordida. Você merece essa explosão de sabor!
+                    </P>
+                   
+                    <details>
+                        <summary><h3>CLIQUE PARA VER OS INGREDIENTES</h3></summary>
+                        <ul>
+                            <li>hamburguer 180g </li>
+                            <li> Lata de refrigerante </li>
+                            <li>porção de batata fritas </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            /*Essa div vem mostrando o COMBO 3*/
+            <div class="itens_cont">
+                <img src="img/combo 3.jpg">
+                <div class="text_ite">
+                    <h2>
+                        COMBO 3
+                    </h2>
+                <P>Dois hambúrgueres artesanais, duas vezes mais sabor. Pães brioche macios, carnes suculentas grelhadas no ponto certo e queijo derretendo em cada camada. </P>
+                <details>
+                    <summary>
+                        <h3>CLIQUE PARA VER OS INGREDIENTES</h3>
+                    </summary>
                     <ul>
-                        <li>Hambúrguer 200g</li>
-                        <li>Lata de refrigerante</li>
-                        <li>porção de batata fritas</li>
+                     <li>Dois hambúrgueres artesanais</li>
+                     <li> Lata de refrigerante </li>
+                     <li>porção de batata fritas </li>
                     </ul>
-                </td>
-                <td>
-                    <p> Dois hambúrgueres artesanais, duas vezes mais sabor. Pães brioche macios, carnes suculentas
-                        grelhadas no ponto certo e queijo derretendo em cada camada. Um combo feito para quem não quer
-                        escolher entre um ou outro — porque quando o hambúrguer é bom de verdade, um só nunca é
-                        suficiente</p>
-                    <ul>
-                        <li>Dois hambúrgueres artesanais</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <!--Rodapé-->
-    <footer>
-        <hr>
-        <table>
+                </details>
+            </div>
+
+    </main>
+    <footer class="rodape">
+        <table class="conteiner">
             <thead>
                 <tr>
-                    <th>
+                    <th class="logo">
                         <div align="left"> <img src="img/arteimg-removebg-preview.png " width="200" height="150">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
