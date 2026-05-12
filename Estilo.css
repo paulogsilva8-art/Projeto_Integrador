@@ -18,7 +18,7 @@ h1{
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 
 }
@@ -64,12 +64,12 @@ h1{
 
 .coluna a {
     text-decoration: none;
-    color: #4b0082; /* roxo parecido com o seu */
+    color: #000000; /* roxo parecido com o seu */
     transition: 0.3s;
 }
 
 .coluna a:hover {
-    color: #0000ff;
+    color: #5f5f5f;
 }
 
 .link {
