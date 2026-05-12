@@ -8,7 +8,74 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Estilo.css">
     <style>
-             /*rodapé*/
+       body {
+            margin: 0;
+            padding: 0;
+            background-image: url("img/fundotundo.png");
+            
+        }
+        .banner {
+            background: linear-gradient(rgba(180, 0, 0, 0.422), rgba(180, 0, 0, 0.614)),
+                url('img/fundo\ do\ banner.png');
+            background-size: cover;
+            background-position: center;
+            color: antiquewhite;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .banner h1 {
+            font-size: 70px;
+            letter-spacing: 5px;
+        }
+
+        .conteiner_bebidas {
+          display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 20px;
+         padding: 30px;
+         width: 100%;
+         box-sizing: border-box;
+
+        }
+
+        .itens_cont {
+            width: 23%;
+            background-color: #970101;
+            border-radius: 10px;
+            height: 325px;
+            overflow: hidden;
+        }
+        .itens_cont:hover {
+            height: 400px;
+            transition: height 0.9s ease;
+     
+        }
+
+        .itens_cont img {
+            justify-content: space-around;
+            width: 100%;
+            padding: 5px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .itens_cont h2 {
+            margin-top: 40px;
+            text-align: center;
+            color: antiquewhite;
+        }
+        .itens_cont p {
+            text-align: center;
+            margin-top: 20px;
+            color: antiquewhite;
+        }
+
+        h2{
+            cursor: pointer;
+        }
+               /*rodapé*/
         
 footer {
     width: 100%;
@@ -96,75 +163,8 @@ footer {
 /* Redes */
 .footer-social {
     font-size: 18px;
+
 }
-       body {
-            margin: 0;
-            padding: 0;
-            background-image: url("img/fundotundo.png");
-            
-        }
-        .banner {
-            background: linear-gradient(rgba(180, 0, 0, 0.422), rgba(180, 0, 0, 0.614)),
-                url('img/fundo\ do\ banner.png');
-            background-size: cover;
-            background-position: center;
-            color: antiquewhite;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .banner h1 {
-            font-size: 70px;
-            letter-spacing: 5px;
-        }
-
-        .conteiner_bebidas {
-          display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         gap: 20px;
-         padding: 30px;
-         width: 100%;
-         box-sizing: border-box;
-
-        }
-
-        .itens_cont {
-            width: 23%;
-            background-color: #970101;
-            border-radius: 10px;
-            height: 325px;
-            overflow: hidden;
-        }
-        .itens_cont:hover {
-            height: 400px;
-            transition: height 0.9s ease;
-     
-        }
-
-        .itens_cont img {
-            justify-content: space-around;
-            width: 100%;
-            padding: 5px;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-
-        .itens_cont h2 {
-            margin-top: 40px;
-            text-align: center;
-            color: antiquewhite;
-        }
-        .itens_cont p {
-            text-align: center;
-            margin-top: 20px;
-            color: antiquewhite;
-        }
-
-        h2{
-            cursor: pointer;
-        }
-        
     </style>
 </head>
 
@@ -179,8 +179,10 @@ footer {
             <div class="itens_cont">
                 <img src="img/agua.png">
                 
-                    <h2>PREÇO</h2>
-                    <p>Água R$2,50</p>
+
+                    <h2>ÁGUA</h2>
+                        <p>Crystal R$3,00</p>
+                        <p>Minalba R$4,00</p>
                 
             </div>
 
@@ -188,7 +190,8 @@ footer {
                 <img src="img/refrigerantes.png">
                    
                      <h2>REFRIGERANTES</h2>
-                    <p>Refrigerante R$3,99</p>
+                    <p>Coca-Cola R$7,00</p>
+                    <p>Guaraná Antartica R$6,00</p>
                 
             </div>
          
@@ -196,7 +199,8 @@ footer {
                 <img src="img/sucos.png">
                
                     <h2>SUCOS</h2>
-                    <p>Suco R$7,00</p>
+                    <p>Del Valle R$6,00</p>
+                    <p>Manguary R$7,00</p>
                 
             </div>
 
@@ -204,60 +208,58 @@ footer {
                 <img src="img/long.png">
                 
                      <h2>LONG NECK</h2>
-                    <p>R$7,50</p>
+                    <p>Heineken R$10,00</p>
+                    <p>Budweiser R$9,00</p>
                 
             </div>
 
         </div>
     </main>
-    <!--Rodapé-->
+
+<!-- A partir daq começa o rodapé -->
     <footer>
 
-        <div class="container">
+        <div class="footer-container">
 
             <!-- Logo -->
-            <div class="logo">
-                <img src="img/Logo.png" width="100px" height="60px" alt="Arte na Chapa">
+            <div class="footer-logo">
+                <img src="img/Logo- fundo removido.png" width="30%" height="30%" alt="Arte na Chapa">
 
                 <h2>ARTE NA CHAPA</h2>
 
-                <p>HAMBURGUERIA</p>
+                <p>Hamburgueria</p>
             </div>
 
             <!-- Institucional -->
-            <div class="coluna">
+            <div class="footer-coluna">
                 <h3>INSTITUCIONAL</h3>
 
                 <ul>
                     <li><a href="index.html">INÍCIO</a></li>
                     <li><a href="quemsomos.html">QUEM SOMOS</a></li>
-                    <li><a href="index.html">MENU</a></li>
-                    <li><a href="maispedidos.html">BEBIDAS</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="Bebidas.html">BEBIDAS</a></li>
                     <li><a href="combos.html">COMBOS</a></li>
                 </ul>
             </div>
 
             <!-- Contato -->
-            <div class="coluna">
-                <h3>ENTRE EM CONTATO</h3>
+            <div class="footer-coluna">
+                <a href="https://wa.me/14998387107" target="_blank"><h3>ENTRE EM CONTATO</h3></a>
 
-                <a href="https://web.whatsapp.com/">ENTRE EM CONTATO</a>
+                <a href="#">ENTRE EM CONTATO</a>
             </div>
 
             <!-- Redes -->
-            <div class="coluna">
+            <div class="footer-coluna">
                 <h3>REDES SOCIAIS</h3>
-                <a href="https://www.instagram.com/artenachapa" target="_blank">
-                    <p class="social">@artenachapa</p>
-                    <img src="img/inst_logo_01.png" width="20px" height="20px" alt="Instagram">
-                </a>
-            </div>
 
+                <p class="footer-social">@artenachapa</p>
+            </div>
 
         </div>
 
     </footer>
+    
 </body>
-
-
 </html>
