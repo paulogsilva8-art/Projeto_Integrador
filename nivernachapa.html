@@ -5,6 +5,96 @@
     <meta charset="UTF-8">
     <title>Niver na Chapa</title>
     <style>
+        /*rodapé*/
+        
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+    padding: 40px 60px;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+/* Container interno */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.footer-logo {
+    max-width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer-logo img {
+    width: 80px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.footer-logo h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #222;
+    box-sizing: border-box;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Colunas */
+.footer-coluna {
+    width: 10px;
+    box-sizing: border-box;
+}
+
+/* Títulos */
+.footer-coluna h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000;
+    box-sizing: border-box;
+}
+
+/* Lista */
+.footer-coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-coluna ul li {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Links */
+.footer-coluna a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    transition: 0.3s;
+}
+
+.footer-coluna a:hover {
+    color: hsl(0, 84%, 27%);
+}
+
+/* Redes */
+.footer-social {
+    font-size: 18px;
+
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,7 +105,7 @@
         header {
             background-color: #be0808;
             background-image: url(img/fundovermelho.png);
-            color: white;
+            color: antiquewhite;
             text-align: center;
             font-size: 80px;
             font-weight: bold;
@@ -28,14 +118,23 @@
             justify-content: space-around;
             gap: 50px;
             margin: 40px;
+            
         }
 
         .itens_cont {
             width: 50%;
+            height: 400px;
             background-color: #b30000;
             border-radius: 10px;
             text-align: center;
             padding: 20px;
+            overflow: hidden;
+           
+        }
+        .itens_cont:hover{
+            height: 500px;
+            transition: height 0.9s;
+
         }
 
         .itens_cont img {
@@ -56,9 +155,15 @@
             cursor: pointer;
         }
 
-        ul {
+        .itens_cont ul {
             list-style-type: none;
+            background-color: rgb(6, 39, 59, 0.255);
+            border-radius: 10px;
+            padding: 5px;
         }
+
+
+       
     </style>
 </head>
 
@@ -70,23 +175,67 @@
         <div class="container">
             <div class="itens_cont">
                 <img src="img/bolo de chocolate.jpg">
-                <details>
-                    <summary>
+                
+                   
                         <h2>Comemore seu aniversário conosco</h2>
-                    </summary>
+                    
                     <ul>
                         <li>Espaço reservado</li>
                         <li>Hambúrguer grátis para o aniversariante</li>
                         <li>Bolo grátis se tiver mais de 5 amigos</li>
                         <li>Entre em contato pelo WhatsApp: <strong>(14) 99999-9899</strong></li>
                     </ul>
-                </details>
+                
             </div>
 
         </div>
 
     </main>
+    <!-- A partir daq começa o rodapé -->
+    <footer>
 
+        <div class="footer-container">
+
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="img/Logo- fundo removido.png" width="30%" height="30%" alt="Arte na Chapa">
+
+                <h2>ARTE NA CHAPA</h2>
+
+                <p>Hamburgueria</p>
+            </div>
+
+            <!-- Institucional -->
+            <div class="footer-coluna">
+                <h3>INSTITUCIONAL</h3>
+
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">BEBIDAS</a></li>
+                    <li><a href="combos.html">COMBOS</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato -->
+            <div class="footer-coluna">
+                <a href="https://wa.me/14998387107" target="_blank"><h3>ENTRE EM CONTATO</h3></a>
+
+                <a href="#">ENTRE EM CONTATO</a>
+            </div>
+
+            <!-- Redes -->
+            <div class="footer-coluna">
+                <h3>REDES SOCIAIS</h3>
+
+                <p class="footer-social">@artenachapa</p>
+            </div>
+
+        </div>
+
+    </footer>
+    
 </body>
 </html>
 
