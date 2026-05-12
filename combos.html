@@ -8,6 +8,95 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Estilo.css">
     <style>
+             /*rodapé*/
+        
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+    padding: 40px 60px;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+/* Container interno */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.footer-logo {
+    max-width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer-logo img {
+    width: 80px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.footer-logo h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #222;
+    box-sizing: border-box;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Colunas */
+.footer-coluna {
+    width: 10px;
+    box-sizing: border-box;
+}
+
+/* Títulos */
+.footer-coluna h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000;
+    box-sizing: border-box;
+}
+
+/* Lista */
+.footer-coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-coluna ul li {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Links */
+.footer-coluna a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    transition: 0.3s;
+}
+
+.footer-coluna a:hover {
+    color: hsl(0, 84%, 27%);
+}
+
+/* Redes */
+.footer-social {
+    font-size: 18px;
+}
         body {
             margin: 0;
             padding: 0;
@@ -41,6 +130,14 @@
             width: 30%;
             background-color: #970101;
             border-radius: 10px;
+            height: 875px;
+            overflow: hidden;
+        }
+
+        .itens_cont:hover {
+            height: 980px;
+            transition: height 0.9s ease;
+     
         }
 
         .itens_cont img {
@@ -74,16 +171,7 @@
              line-height: 1.5;
              border-radius: 10px;
           }
-          summary{
-            list-style: none;
-            cursor: pointer;
-                     
 
-    
-          }
-
-  
-          
           ul{
             list-style-type: none;
           }
@@ -112,14 +200,14 @@
                     </h2>
                     <P> Um hambúrguer artesanal suculento, servido no pão brioche macio, com queijo derretido e ingredientes frescos que garantem sabor em cada mordida.
                     </P>
-                    <details>
-                        <summary><h3>CLIQUE PARA VER OS INGREDIENTES</h3></summary>
+                   
+                      <h3>CLIQUE PARA VER OS INGREDIENTES</h3>
                         <ul>
                             <li>hamburguer 120g </li>
                             <li> Lata de refrigerante </li>
                             <li>porção de batata fritas </li>
                         </ul>
-                    </details>
+               
                 </div>
 
             </div>
@@ -134,14 +222,14 @@
                     <P>Um hambúrguer artesanal suculento, no pão brioche macio, com queijo derretido e sabor que conquista na primeira mordida. Você merece essa explosão de sabor!
                     </P>
                    
-                    <details>
-                        <summary><h3>CLIQUE PARA VER OS INGREDIENTES</h3></summary>
+                    
+                        <h3>CLIQUE PARA VER OS INGREDIENTES</h3>
                         <ul>
                             <li>hamburguer 180g </li>
                             <li> Lata de refrigerante </li>
                             <li>porção de batata fritas </li>
                         </ul>
-                    </details>
+                    
                 </div>
             </div>
             <div class="itens_cont">
@@ -151,16 +239,13 @@
                         COMBO 3
                     </h2>
                 <P>Dois hambúrgueres artesanais, duas vezes mais sabor. Pães brioche macios, carnes suculentas grelhadas no ponto certo e queijo derretendo em cada camada. </P>
-                <details>
-                    <summary>
+                
                         <h3>CLIQUE PARA VER OS INGREDIENTES</h3>
-                    </summary>
                     <ul>
                      <li>Dois hambúrgueres artesanais</li>
                      <li> Lata de refrigerante </li>
                      <li>porção de batata fritas </li>
                     </ul>
-                </details>
             </div>
 
     </main>
