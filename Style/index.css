@@ -1,6 +1,7 @@
 *{
 padding: 0;
 margin: 0;
+box-sizing: border-box;
 }
 
 .menu{
@@ -44,12 +45,7 @@ color:  #b30000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 40px;
 }
-.lanches{
-   background-image: url(img/fundo2.png);
-   width: 100;
-   height:600px;
-   margin-top: 30px;
-}
+
 
 .topo{
     width: 100%;
@@ -84,38 +80,42 @@ color:  #b30000;
 }
 .cardapio{
     width: 100%;
-
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    flex-wrap: wrap;
-    gap: 20px;
 
     padding: 40px;
+    margin-top: 30px;
 }
 
-/* LANCHE */
-.lanche{
-    width: 400px;
-    height: 280px;
-
-    position: relative;
-    overflow: hidden;
-
+/* CONTAINER DOS LANCHES */
+.lanches{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-    text-decoration: none;
+    gap: 20px;
 }
 
-/* IMAGEM */
-.lanche img{
-    width: 100%;
-    height: 100%;
+/* LINKS */
+.lanches a{
+    overflow: hidden;
+    display: block;
+}
+
+/* IMAGENS */
+.lanches img{
+    width: 350px;
+    height: 230px;
 
     object-fit: cover;
-    display: block;
 
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+/* HOVER */
+.lanches a:hover{
+    transform: scale(1.08);
+    transition: 0.4s ease;
 }
