@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>combos</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="">
     <style>
         /* ===== ESTILOS GERAIS ===== */
-         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-         p{
-             font-family: "Montserrat", sans-serif;
-         }
-         h2{
-             font-family: "Montserrat", sans-serif;
-         }
-         h3{
-             font-family: "Montserrat", sans-serif;
-         }
-         ul{
-             font-family: "Montserrat", sans-serif;
-         }
-            li{
-                font-family: "Montserrat", sans-serif;
-            }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        p {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h2 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h3 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        ul {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        li {
+            font-family: "Montserrat", sans-serif;
+        }
 
         body {
             margin: 0;
@@ -36,44 +41,58 @@
         .banner {
             background: linear-gradient(rgba(180, 0, 0, 0.422), rgba(180, 0, 0, 0.614)),
                 url('img/fundo\ do\ banner.png');
-            background-size: cover; /* Garante que a imagem cubra todo o banner */
-            background-position: center;/* Centraliza a imagem no banner */
-            color: white;/* Cor do texto */
-            text-align: center;/* Centraliza o texto horizontalmente */
-            padding: 60px 20px;/* Espaçamento interno do banner */
+            background-size: cover;
+            /* Garante que a imagem cubra todo o banner */
+            background-position: center;
+            /* Centraliza a imagem no banner */
+            color: white;
+            /* Cor do texto */
+            text-align: center;
+            /* Centraliza o texto horizontalmente */
+            padding: 60px 20px;
+            /* Espaçamento interno do banner */
         }
 
         .banner h1 {
-            font-size: 70px;/* Tamanho da fonte do título */
-            letter-spacing: 5px;/* Espaçamento entre as letras */
+            font-size: 70px;
+            /* Tamanho da fonte do título */
+            letter-spacing: 5px;
+            /* Espaçamento entre as letras */
         }
 
         .conteiner_combos {
-            margin-top: 50px;/* Espaçamento superior do container de combos */
-            display: flex;/* Exibe os itens em linha */
-            justify-content: space-around;/* Distribui os itens com espaço ao redor */
+            margin-top: 50px;
+            /* Espaçamento superior do container de combos */
+            display: flex;
+            /* Exibe os itens em linha */
+            justify-content: space-around;
+            /* Distribui os itens com espaço ao redor */
         }
 
         .itens_cont {
-            width: 30%;/* Largura de cada item */
-            background-color: #970101;/* Cor de fundo dos itens */
-            border-radius: 10px;/* Bordas arredondadas dos itens */
-            height: 875px;/* Altura inicial dos itens */
-            overflow: hidden;/* Esconde o conteúdo que ultrapassar a altura inicial */
+            width: 30%;
+            /* Largura de cada item */
+            background-color: #970101;
+            /* Cor de fundo dos itens */
+            border-radius: 10px;
+            /* Bordas arredondadas dos itens */
+            height: 875px;
+            /* Altura inicial dos itens */
+            overflow: hidden;
+            /* Esconde o conteúdo que ultrapassar a altura inicial */
         }
 
         /* Efeito de hover para expandir a altura dos itens */
         .itens_cont:hover {
             height: 1000px;
-            transition: height 0.9s ease;
-
+            transition: height 0.9s ease;/* Transição suave para a mudança de altura */
         }
 
         /* Estilos para o conteúdo dos itens */
         .itens_cont img {
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;/* Bordas arredondadas apenas na parte superior da imagem */
+            border-top-right-radius: 10px;/* Bordas arredondadas apenas na parte superior da imagem */
         }
 
         /* Estilos para o texto dentro dos itens */
@@ -91,7 +110,7 @@
         .text_ite h3 {
             text-align: center;
             color: antiquewhite;
-            cursor: pointer;
+            cursor: pointer;/* Adiciona um cursor de ponteiro para indicar que é clicável */
         }
 
         /* Estilos para os parágrafos dentro dos itens */
@@ -117,7 +136,7 @@
         ul {
             list-style-type: none;
         }
-        
+
         /* cor dos textos escritos em h1 */
         h1 {
             color: antiquewhite;
@@ -140,27 +159,27 @@
             flex-wrap: wrap;
             gap: 30px;
             padding: 0 20px;
-            
+
         }
 
         /* Logo */
         .footer-logo {
             max-width: 220px;
             text-align: center;
-            
+
         }
 
         .footer-logo img {
             width: 90px;
             margin-bottom: 10px;
-            
+
         }
 
         .footer-logo h2 {
             font-size: 22px;
             margin-bottom: 5px;
             color: #222;
-            
+
         }
 
         .footer-logo p {
@@ -171,7 +190,7 @@
         /* Colunas */
         .footer-coluna {
             min-width: 180px;
-            
+
         }
 
         /* Títulos */
