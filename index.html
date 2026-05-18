@@ -8,8 +8,12 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Style/index.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
      body{
         background-image: url(img/fundotundo.png);
+     }
+     a{
+        text-decoration: none;
      }
 
 /* ===== RODAPÉ ===== */
@@ -101,15 +105,15 @@ footer {
             <div class="item">
                 <img src="img/Logo (3).png">
             </div>
-
-            <div class="item">inicio</div>
-            <div class="item">menu</div>
-            <div class="item">quem somos</div>
+            <div class="item"><a href="#menul">Menu</a></div>
+            <div class="item"><a href="quemsomos.html">quem somos</a></div>
+            <div class="item"><a href="#local"></a>localização</div>
+          
             
             <div class="item carrinho">
                 <a href="Pedidos.html">
-                    <img src="img/carrinho2 (1).png" alt="Pedidos">
-                    </a>
+                    <img src="img/carrinho_logo.png" alt="Pedidos">
+                </a>
 
             </div>
     </div>
@@ -150,19 +154,22 @@ footer {
         <br>
         
     
-            <section id="rodapé">
+            <section id="menul">
                 <div class="banner-cardapio"></div>
-                    <div class="cardapio">
+                <div class="cardapio">
                         <div class="lanches">
-                            <a href="brieburguer.html">
-                                <img src="img/brieburguer22.png"      alt="brieburguer"></a>
-                    
+                     
+                            <a href="brieburguer.html"><img src="img/brieburguer22.png" alt="brieburguer"></a>
+                  
                             <a href="catupirycombacon.html">
                                 <img src="img/catupirycombacon22.png"     alt="catupirycombacon"></a>
                       
                             <a href="carnecomqueijo.html">
                                 <img src="img/carneequeijo22.png"    alt="carnecomqueijo"></a>
                         
+                        </div>
+                        <br>
+                        <div class="lanches">
                             <a href="chicken.html">
                                 <img src="img/chicken22.png"    alt="chicken"></a>
                        
@@ -171,12 +178,10 @@ footer {
                      
                             <a href="queijocoalho.html">
                                 <img src="img/queijocoalho22.png"  alt="queijocoalho"></a>
-                   
+                        </div>
+                </div> 
             </section>
-            </div>
-            </div>
-            </div>
-            </div>
+     
 
                 <!-- Espaçamentos -->
              <br>
@@ -192,17 +197,51 @@ footer {
             <br>
             <br>
             <br>
-            <div class="local">
-            <h2>CHEGUE ATÉ NÓS</h2>
-            <br>
-            <br>
-             <!-- Mapa incorporado do Google Maps mostrando a localização -->
+           <section class="localizacao">
+
+    <div class="titulo-local">
+        <h3>CHEGUE ATÉ NÓS</h3>
+        <h1>ESTAMOS TE ESPERANDO!</h1>
+        <div class="linha"></div>
+    </div>
+
+    <div class="container-mapa">
+
+        <div class="info-local">
+
+            <div class="logo-burger">
+                🍔
+            </div>
+
+            <h2>
+                Arte na chapa
+            </h2>
+
+            <p>
+                📍 Av. Joaquim de Souza Campos, 441 - Chácara Peixe,
+                Santa Cruz do Rio Pardo - SP, 18900-426
+            </p>
+
+            <div class="avaliacao">
+                ⭐ 4,7 <span>(510)</span>
+            </div>
+
+            <a href="https://www.google.com/maps/place/Bol%C3%A3o+Big+Burger/@-22.8970798,-49.6184403,17z/data=!3m1!4b1!4m6!3m5!1s0x94c06a2e6b36a937:0xbb39194575187659!8m2!3d-22.8970798!4d-49.6184403!16s%2Fg%2F11svggnxsz?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" class="btn-chegar"  target="_blank">
+                COMO CHEGAR
+            </a>
+
+        </div>
+
+        <div class="mapa">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.441530941406!2d-49.618440299999996!3d-22.8970798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c06a2e6b36a937%3A0xbb39194575187659!2sBol%C3%A3o%20Big%20Burger!5e0!3m2!1spt-BR!2sbr!4v1773094496651!5m2!1spt-BR!2sbr"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
         </div>
+
+    </div>
+
+</section>
         
 <!-- A partir daq começa o rodapé -->
     <footer>
@@ -225,7 +264,7 @@ footer {
                 <ul>
                     <li><a href="index.html">INÍCIO</a></li>
                     <li><a href="quemsomos.html">QUEM SOMOS</a></li>
-                    <li><a href="#">MENU</a></li>
+                    <li><a href="#menul">MENU</a></li>
                     <li><a href="Bebidas.html">BEBIDAS</a></li>
                     <li><a href="combos.html">COMBOS</a></li>
                 </ul>
