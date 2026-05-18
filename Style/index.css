@@ -1,8 +1,10 @@
+/* Remove margens e paddings padrões do navegador */
 *{
 padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
+/* Container principal do menu */
 
 .menu{
 display: flex;
@@ -39,9 +41,6 @@ line-height: 100px;
     width: 60px;
 }
 
-.item :hover{
-color:  #b30000; 
-}
 
 .localizacao{
     width: 100%;
@@ -74,7 +73,7 @@ color:  #b30000;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 3px;
 }
-
+/* Linha decorativa */
 .linha{
     width: 350px;
     height: 4px;
@@ -83,10 +82,12 @@ color:  #b30000;
     border-radius: 20px;
 }
 
-/* CONTAINER PRINCIPAL */
 
+/* Container principal da localização */
 .container-mapa{
+    text-align: center;
     width: 85%;
+    margin: auto;
     background: #B30000;
     border-radius: 35px;
     padding: 40px;
@@ -94,10 +95,11 @@ color:  #b30000;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
-/* CARD ESQUERDO */
 
+/* Card das informações */
 .info-local{
     width: 350px;
     min-height: 500px;
@@ -113,18 +115,9 @@ color:  #b30000;
     justify-content: center;
 }
 
-.logo-burger{
-    width: 100px;
-    height: 100px;
-    background: #2c2c2c;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
-    margin-bottom: 25px;
-}
 
+
+/* Nome do local */
 .info-local h2{
     color: white;
     font-size: 48px;
@@ -135,25 +128,26 @@ color:  #b30000;
 .info-local span{
     color: #ffd000;
 }
-
+/* Texto do endereço */
 .info-local p{
     color: white;
     font-size: 23px;
     line-height: 38px;
     margin-bottom: 35px;
 }
-
+/* Destaques amarelos */
 .avaliacao{
+    
     color: #ffd000;
     font-size: 33px;
     font-weight: bold;
     margin-bottom: 35px;
 }
-
+/* Botão do maps */
 .btn-chegar{
+    text-align: center;
     width: 240px;
     padding: 18px;
-    text-align: center;
     background: white;
     color: #B30000;
     text-decoration: none;
@@ -162,12 +156,12 @@ color:  #b30000;
     border-radius: 18px;
     transition: 0.3s;
 }
-
+/* Hover do botão */
 .btn-chegar:hover{
     transform: scale(1.03);
 }
 
-/* MAPA */
+/* mapa */
 
 .mapa iframe{
     width: 800px;
@@ -184,6 +178,7 @@ color:  #b30000;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 50px;
 }
 
   
@@ -207,6 +202,7 @@ color:  #b30000;
 .img img:hover{
     transform: scale(1.05);
 }
+/* Área principal do cardápio */
 .cardapio{
     width: 100%;
 
@@ -214,7 +210,7 @@ color:  #b30000;
     margin-top: 80px;
 }
 
-/* CONTAINER DOS LANCHES */
+/* container dos lanches */
 .lanches{
     display: flex;
     flex-wrap: wrap;
@@ -226,13 +222,13 @@ color:  #b30000;
    
 }
 
-/* LINKS */
+/* links */
 .lanches a{
     overflow: hidden;
     display: block;
 }
 
-/* IMAGENS */
+/* imagens dos lanches */
 .lanches img{
     width: 350px;
     height: 230px;
@@ -243,18 +239,25 @@ color:  #b30000;
     cursor: pointer;
 }
 
-/* HOVER */
+/* hover*/
 .lanches a:hover{
     transform: scale(1.08);
     transition: 0.4s ease;
 }
+/* Parágrafos com a fonte padrão do site */
 p{
     font-family: "Montserrat", sans-serif;
 }
-
+/* H2 com a fonte padrão do site */
 h2{
   font-family: "Montserrat", sans-serif;  
 }
+/* H3 com a fonte padrão do site */
 h3{
     font-family: "Montserrat", sans-serif;
+}
+/* Banner atrás dos lanches */
+.banner-cardapio{
+    background-image: url(img/fundo2.png);
+    height: 600px;
 }
