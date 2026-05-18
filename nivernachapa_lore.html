@@ -94,72 +94,73 @@ footer {
 .footer-social {
     font-size: 18px;
 
-}
+}        /*corpo da pagina*/
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+            font-family: Arial, sans-serif; /* Fonte padrão*/
+            margin: 0; /* remove margens*/
             background-color: #f2e1e1;
-            background-image: url(img/fundotundo.png);
+            background-image: url(img/fundotundo.png); /*imagem de fundo*/
         }
-
+        /*cabeçalho vermelho*/
         header {
-            background-color: #be0808;
-            background-image: url(img/fundovermelho.png);
-            color: antiquewhite;
-            text-align: center;
-            font-size: 80px;
-            font-weight: bold;
-            padding: 70px 30px;
+            background-color: #be0808; /* cor do fundo*/
+            background-image: url(img/fundovermelho.png); /*imagem de fundo*/
+            color: antiquewhite; /*cor do texto*/
+            text-align: center; /*centraliza o texto*/
+            font-size: 80px; /* tamanho da fonte*/
+            font-weight: bold; /*texto em negrito*/
+            padding: 70px 30px; /*espaçamento interno*/
         }
-
+        /* flexbox alinhar lado a lado*/
         .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            gap: 50px;
-            margin: 40px;
+            display: flex; /* flexbox*/
+            align-items: center; /*alinha ao centro*/
+            justify-content: space-around; /*espaça os itens*/
+            gap: 50px; /*espaço entre os itens*/
+            margin: 40px; /*margem*/
             
         }
-
+        /*caixas vermelhas bordas arredondadas*/
         .itens_cont {
-            width: 50%;
-            height: 400px;
-            background-color: #b30000;
-            border-radius: 10px;
-            text-align: center;
-            padding: 20px;
-            overflow: hidden;
+            width: 50%; /*largura de cada caixa*/
+            height: 400px; /*altura inicial*/
+            background-color: #b30000; /* cor de fundo*/
+            border-radius: 10px; /*bordas arrededondas*/
+            text-align: center; /*centraliza conteúdo*/
+            padding: 20px; /*espaçamento interno*/
+            overflow: hidden; /*esconde o conteúdo para não ultrapassar*/
            
         }
+        /*aumenta a altura*/
         .itens_cont:hover{
-            height: 500px;
-            transition: height 0.9s;
+            height: 500px; /*uma altura nova ao passar o mouse*/
+            transition: height 0.9s; /*transição suave*/
 
         }
-
+        /*imagem dentro da caixa*/
         .itens_cont img {
-            width: 50%;
-            border-radius: 10px;
+            width: 50%; /*ocupa metade da largura*/
+            border-radius: 10px; /*bordas arrededondas*/
         }
-
+        /*titulo da caixa*/
         .itens_cont h2 {
-            color: rgb(252, 231, 204);
+            color: rgb(252, 231, 204); /*cor*/
         }
-
+        /*itens dentro da caixa*/
         .itens_cont ul li {
-            color: antiquewhite;
+            color: antiquewhite; /*cor para o texto*/
         }
-
+        /*configuração para o elemento*/
         summary {
-            list-style: none;
-            cursor: pointer;
+            list-style: none; /*remove marcador*/
+            cursor: pointer; /*elemento da mãozinha*/
         }
-
+      /*estilo da lista*/
         .itens_cont ul {
             list-style-type: none;
-            background-color: rgb(6, 39, 59, 0.255);
-            border-radius: 10px;
-            padding: 5px;
+            background-color: rgb(6, 39, 59, 0.255); /*remove marcadores*/
+            border-radius: 10px; /*bordas arredondadas*/
+            padding: 5px; /*espaçamento*/
         }
 
 
@@ -212,15 +213,15 @@ footer {
                 <ul>
                     <li><a href="index.html">INÍCIO</a></li>
                     <li><a href="quemsomos.html">QUEM SOMOS</a></li>
-                    <li><a href="#">MENU</a></li>
-                    <li><a href="#">BEBIDAS</a></li>
+                    <li><a href="index.html">MENU</a></li>
+                    <li><a href="Bebidas.html">BEBIDAS</a></li>
                     <li><a href="combos.html">COMBOS</a></li>
                 </ul>
             </div>
 
             <!-- Contato -->
             <div class="footer-coluna">
-                <a href="https://wa.me/14998387107" target="_blank"><h3>ENTRE EM CONTATO</h3></a>
+                <a href="https://wa.me/14998387107" target="_blank"><h3>WHATSAPP</h3></a>
 
                 <a href="#">ENTRE EM CONTATO</a>
             </div>
