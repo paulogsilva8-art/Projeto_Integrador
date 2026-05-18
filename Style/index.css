@@ -39,9 +39,6 @@ line-height: 100px;
     width: 60px;
 }
 
-.item :hover{
-color:  #b30000; 
-}
 
 .localizacao{
     width: 100%;
@@ -83,10 +80,12 @@ color:  #b30000;
     border-radius: 20px;
 }
 
-/* CONTAINER PRINCIPAL */
+
 
 .container-mapa{
+    text-align: center;
     width: 85%;
+    margin: auto;
     background: #B30000;
     border-radius: 35px;
     padding: 40px;
@@ -94,9 +93,10 @@ color:  #b30000;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
-/* CARD ESQUERDO */
+
 
 .info-local{
     width: 350px;
@@ -113,17 +113,8 @@ color:  #b30000;
     justify-content: center;
 }
 
-.logo-burger{
-    width: 100px;
-    height: 100px;
-    background: #2c2c2c;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
-    margin-bottom: 25px;
-}
+
+
 
 .info-local h2{
     color: white;
@@ -144,6 +135,7 @@ color:  #b30000;
 }
 
 .avaliacao{
+    
     color: #ffd000;
     font-size: 33px;
     font-weight: bold;
@@ -151,9 +143,9 @@ color:  #b30000;
 }
 
 .btn-chegar{
+    text-align: center;
     width: 240px;
     padding: 18px;
-    text-align: center;
     background: white;
     color: #B30000;
     text-decoration: none;
@@ -184,6 +176,7 @@ color:  #b30000;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 50px;
 }
 
   
@@ -257,4 +250,8 @@ h2{
 }
 h3{
     font-family: "Montserrat", sans-serif;
+}
+.banner-cardapio{
+    background-image: url(img/fundo2.png);
+    height: 600px;
 }
