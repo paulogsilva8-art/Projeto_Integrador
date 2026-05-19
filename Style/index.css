@@ -1,48 +1,49 @@
 /* Remove margens e paddings padrões do navegador */
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 /* Container principal do menu */
 
-.menu{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-height: 100px; 
-background-color: #b30000; 
-justify-content: space-between;
-color: antiquewhite;
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100px;
+    background-color: #b30000;
+    justify-content: space-between;
+    color: antiquewhite;
 }
 
-.menu img{
-width: 100%;
+.menu img {
+    width: 100%;
 }
 
-.item{
-text-decoration: none;  
-color:  antiquewhite; 
-font-family: ; 
-font-size: 35px; 
-cursor: pointer; 
+.item {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 35px;
+    cursor: pointer;
 
-line-height: 100px;
+    line-height: 100px;
 }
 
-.carrinho{
+.carrinho {
     text-align: right;
     width: 5%;
     padding: 20px 10px;
 
-    
+
 }
-.carrinho img{
+
+.carrinho img {
     width: 60px;
 }
 
 
-.localizacao{
+.localizacao {
     width: 100%;
     min-height: 100vh;
 
@@ -55,26 +56,27 @@ line-height: 100px;
 
 /* TITULO */
 
-.titulo-local{
+.titulo-local {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.titulo-local h3{
+.titulo-local h3 {
     color: #B30000;
     font-size: 35px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 2px;
 }
 
-.titulo-local h1{
+.titulo-local h1 {
     color: #111;
     font-size: 90px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 3px;
 }
+
 /* Linha decorativa */
-.linha{
+.linha {
     width: 350px;
     height: 4px;
     background: #B30000;
@@ -84,7 +86,7 @@ line-height: 100px;
 
 
 /* Container principal da localização */
-.container-mapa{
+.container-mapa {
     text-align: center;
     width: 85%;
     margin: auto;
@@ -100,7 +102,7 @@ line-height: 100px;
 
 
 /* Card das informações */
-.info-local{
+.info-local {
     width: 350px;
     min-height: 500px;
 
@@ -118,33 +120,36 @@ line-height: 100px;
 
 
 /* Nome do local */
-.info-local h2{
+.info-local h2 {
     color: white;
     font-size: 48px;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 25px;
 }
 
-.info-local span{
+.info-local span {
     color: #ffd000;
 }
+
 /* Texto do endereço */
-.info-local p{
+.info-local p {
     color: white;
     font-size: 23px;
     line-height: 38px;
     margin-bottom: 35px;
 }
+
 /* Destaques amarelos */
-.avaliacao{
-    
+.avaliacao {
+
     color: #ffd000;
     font-size: 33px;
     font-weight: bold;
     margin-bottom: 35px;
 }
+
 /* Botão do maps */
-.btn-chegar{
+.btn-chegar {
     text-align: center;
     width: 240px;
     padding: 18px;
@@ -156,21 +161,24 @@ line-height: 100px;
     border-radius: 18px;
     transition: 0.3s;
 }
+
 /* Hover do botão */
-.btn-chegar:hover{
+.btn-chegar:hover {
     transform: scale(1.03);
 }
 
 /* mapa */
 
-.mapa iframe{
+.mapa iframe {
     width: 800px;
     height: 500px;
 
     border: none;
     border-radius: 25px;
 }
-.topo{
+
+/*tres partes principais*/
+.topo {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -181,29 +189,33 @@ line-height: 100px;
     padding: 50px;
 }
 
-  
-.img{
- margin-top: 50px;
- 
-  
-  
+
+.img {
+    margin-top: 50px;
+
+
+
 }
-.img a{
+
+.img a {
     text-decoration: none;
     color: antiquewhite;
 }
-.img img{
+
+.img img {
     width: 320px;
     height: 420px;
     transition: 0.4s;
     cursor: pointer;
     justify-content: space-around;
 }
-.img img:hover{
+
+.img img:hover {
     transform: scale(1.05);
 }
+
 /* Área principal do cardápio */
-.cardapio{
+.cardapio {
     width: 100%;
 
     padding: 40px;
@@ -211,7 +223,7 @@ line-height: 100px;
 }
 
 /* container dos lanches */
-.lanches{
+.lanches {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -219,17 +231,17 @@ line-height: 100px;
 
 
     gap: 20px;
-   
+
 }
 
 /* links */
-.lanches a{
+.lanches a {
     overflow: hidden;
     display: block;
 }
 
 /* imagens dos lanches */
-.lanches img{
+.lanches img {
     width: 350px;
     height: 230px;
 
@@ -240,24 +252,28 @@ line-height: 100px;
 }
 
 /* hover*/
-.lanches a:hover{
+.lanches a:hover {
     transform: scale(1.08);
     transition: 0.4s ease;
 }
+
 /* Parágrafos com a fonte padrão do site */
-p{
+p {
     font-family: "Montserrat", sans-serif;
 }
+
 /* H2 com a fonte padrão do site */
-h2{
-  font-family: "Montserrat", sans-serif;  
-}
-/* H3 com a fonte padrão do site */
-h3{
+h2 {
     font-family: "Montserrat", sans-serif;
 }
+
+/* H3 com a fonte padrão do site */
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
 /* Banner atrás dos lanches */
-.banner-cardapio{
+.banner-cardapio {
     background-image: url(img/fundo2.png);
     height: 600px;
 }
