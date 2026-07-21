@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combos</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="Style/footer2.css">
+    <style>
+        /* ===== ESTILOS DA FONTE ===== */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        p {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h2 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h3 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        ul {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        li {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("img/fundotundo.png");
+
+        }
+
+        .banner {
+            background: linear-gradient(rgba(180, 0, 0, 0.422), rgba(180, 0, 0, 0.614)),
+                url('img/fundo\ do\ banner.png');
+            background-size: cover;
+            /* Garante que a imagem cubra todo o banner */
+            background-position: center;
+            /* Centraliza a imagem no banner */
+            color: white;
+            /* Cor do texto */
+            text-align: center;
+            /* Centraliza o texto horizontalmente */
+            padding: 60px 20px;
+            /* Espaçamento interno do banner */
+        }
+
+        .banner h1 {
+            font-size: 70px;
+            /* Tamanho da fonte do título */
+            letter-spacing: 5px;
+            /* Espaçamento entre as letras */
+        }
+
+        .conteiner_combos {
+            margin-top: 50px;
+            /* Espaçamento superior do container de combos */
+            display: flex;
+            /* Exibe os itens em linha */
+            justify-content: space-around;
+            /* Distribui os itens com espaço ao redor */
+        }
+
+        .itens_cont {
+            width: 30%;
+            /* Largura de cada item */
+            background-color: #970101;
+            /* Cor de fundo dos itens */
+            border-radius: 10px;
+            /* Bordas arredondadas dos itens */
+            height: 875px;
+            /* Altura inicial dos itens */
+            overflow: hidden;
+            /* Esconde o conteúdo que ultrapassar a altura inicial */
+        }
+
+        /* Efeito de hover para expandir a altura dos itens */
+        .itens_cont:hover {
+            height: 1000px;
+            transition: height 0.9s ease;/* Transição suave para a mudança de altura */
+        }
+
+        /* Estilos para o conteúdo dos itens */
+        .itens_cont img {
+            width: 100%;
+            border-top-left-radius: 10px;/* Bordas arredondadas apenas na parte superior da imagem */
+            border-top-right-radius: 10px;/* Bordas arredondadas apenas na parte superior da imagem */
+        }
+
+        /* Estilos para o texto dentro dos itens */
+        .text_ite {
+            padding: 20px;
+        }
+
+        /* Estilos para as letras que tiverem em h2 */
+        .text_ite h2 {
+            text-align: center;
+            color: antiquewhite;
+        }
+
+        /* Estilos para as letras que tiverem em h3 */
+        .text_ite h3 {
+            text-align: center;
+            color: antiquewhite;
+            cursor: pointer;/* Adiciona um cursor de ponteiro para indicar que é clicável */
+        }
+
+        /* Estilos para os parágrafos dentro dos itens */
+        .text_ite p {
+            color: #faebd7;
+        }
+
+        /* Estilos para as listas dentro dos itens */
+        .text_ite ul {
+            color: antiquewhite;
+            background-color: rgba(6, 39, 59, 0.255);
+            border-radius: 10px;
+
+        }
+
+        /* Estilos para os itens da lista dentro dos itens */
+        .text_ite li {
+            line-height: 1.5;
+            border-radius: 10px;
+        }
+
+        /* estilo da lista */
+        ul {
+            list-style-type: none;
+        }
+
+        /* cor dos textos escritos em h1 */
+        h1 {
+            color: antiquewhite;
+        }
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1>COMBOS</h1>
+        </div>
+    </header>
+    <main>
+        <div class="conteiner_combos">
+
+            <div class="itens_cont">
+
+                <img src="img/combo.jpg">
+                <div class="text_ite">
+                    <h2>
+                        COMBO 1
+                    </h2>
+                    <P> Um hambúrguer artesanal suculento, servido no pão brioche macio, com queijo derretido e
+                        ingredientes frescos que garantem sabor em cada mordida.
+                    </P>
+
+                    <h3>ACOMPANHA:</h3>
+                    <ul>
+                        <li>hamburguer 120g </li>
+                        <li> Lata de refrigerante </li>
+                        <li>porção de batata fritas </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="itens_cont">
+                <img src="img/combo-2.jpg">
+                <div class="text_ite">
+                    <h2>
+                        COMBO 2
+                    </h2>
+                    <P>Um hambúrguer artesanal suculento, no pão brioche macio, com queijo derretido e sabor que
+                        conquista na primeira mordida. Você merece essa explosão de sabor!
+                    </P>
+
+
+                    <h3>ACOMPANHA:</h3>
+                    <ul>
+                        <li>hamburguer 180g </li>
+                        <li> Lata de refrigerante </li>
+                        <li>porção de batata fritas </li>
+                    </ul>
+
+                </div>
+            </div>
+        <!-- -->
+            <div class="itens_cont">
+                <img src="img/combo 3.jpg">
+                <div class="text_ite">
+                    <h2>
+                        COMBO 3
+                    </h2>
+                    <P>Dois hambúrgueres artesanais, duas vezes mais sabor. Pães brioche macios, carnes suculentas
+                        grelhadas no ponto certo e queijo derretendo em cada camada. </P>
+
+                    <h3>ACOMPANHA:</h3>
+                    <ul>
+                        <li>Dois hambúrgueres artesanais</li>
+                        <li> Lata de refrigerante </li>
+                        <li>porção de batata fritas </li>
+                    </ul>
+                </div>
+
+    </main>
+    <!-- A partir daq começa o rodapé -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="img/Logo- fundo removido.png" width="30%" height="30%" alt="Arte na Chapa">
+
+                <h2>ARTE NA CHAPA</h2>
+
+                <p>Hamburgueria</p>
+            </div>
+
+            <!-- Institucional -->
+            <div class="footer-coluna">
+                <h3>INSTITUCIONAL</h3>
+
+                <ul>
+                    <li><a href="index2.html">INÍCIO</a></li>
+                    <li><a href="quemsomos2.html">QUEM SOMOS</a></li>
+                    <li><a href="index2.html">MENU</a></li>
+                    <li><a href="Bebidas2.html">BEBIDAS</a></li>
+                    <li><a href="combos2.html">COMBOS</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato -->
+            <div class="footer-coluna">
+                <h3>ENTRE EM CONTATO</h3></a>
+
+                <a href="https://wa.me/14998387107" target="_blank">WHATSAPP</a>
+            </div>
+
+            <!-- Redes -->
+            <div class="footer-coluna">
+                <h3>REDES SOCIAIS</h3>
+
+                <a href="https://www.instagram.com/artenachapa" class="footer-social" target="_blank">@artenachapa</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

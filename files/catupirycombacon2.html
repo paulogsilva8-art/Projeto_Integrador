@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catupiry com Bacon</title>
+    <link rel="stylesheet" href="Style/footer2.css">
+    <style>
+        /* tudinho */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            background-image: url(img/fundotundo.png);
+            color: hsl(0, 0%, 0%);
+        }
+
+        /* Banner */
+        .banner {
+            background-image: url('img/Fundo\ vermelho.png');
+            ;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 50px;
+        }
+
+        .banner h1 {
+            font-size: 80px;
+            letter-spacing: 5px;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 60px;
+            gap: 60px;
+        }
+
+        /* IMAGEM */
+
+        .hero-img {
+            flex: 1;
+        }
+
+        .hero-img img {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 20px;
+            box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.25);
+            transition: 0.3s;
+        }
+
+        .hero-img img:hover {
+            transform: scale(1.02);
+        }
+
+        /* TEXTO */
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            margin-bottom: 25px;
+            color: #b30000;
+            line-height: 1.1;
+        }
+
+        .hero-text p {
+            font-size: 22px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* CARD LOGIN */
+
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            margin-top: 30px;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: #b30000;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #b30000;
+            outline: none;
+        }
+
+        /* BOTÕES */
+
+        .botoes {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn-login {
+            background: #b30000;
+            color: white;
+        }
+
+        .btn-login:hover {
+            background: #8f0000;
+        }
+
+        .btn-pedido {
+            background: #222;
+            color: white;
+        }
+
+        .btn-pedido:hover {
+            background: black;
+        }
+</style>
+</head>
+
+<body>
+
+
+    <section class="hero">
+
+        <!-- IMAGEM -->
+        <div class="hero-img">
+            <img src="img/catupirycombacon2.jpg" alt="Hambúrguer Artesanal">
+        </div>
+
+        <!-- TEXTO -->
+        <div class="hero-text">
+
+            <h1>Catupiry com Bacon</h1>
+
+            <p>
+                Este hambúrguer artesanal é feito com pão macio e levemente tostado, hambúrguer de carne bovina grelhado
+                e uma camada cremosa de queijo. Ele também leva pedaços crocantes de bacon e um molho vermelho na base
+                do pão, criando uma combinação de sabores intensos, cremosos e suculentos.
+            </p>
+
+            <!-- LOGIN -->
+            <div class="login-box">
+
+                <h2>Faça login para continuar</h2>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" placeholder="Sua senha">
+                </div>
+
+                <div class="botoes">
+
+                    <button class="btn btn-login">
+                        Login
+                    </button>
+
+                    <a href="Pedidos2.html" class="btn btn-pedido">
+                        Fazer Pedido
+                    </a>
+
+                </div>
+
+            </div>
+
+    </section>
+
+<!-- A partir daq começa o rodapé -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="img/Logo- fundo removido.png" width="30%" height="30%" alt="Arte na Chapa">
+
+                <h2>ARTE NA CHAPA</h2>
+
+                <p>Hamburgueria</p>
+            </div>
+
+            <!-- Institucional -->
+            <div class="footer-coluna">
+                <h3>INSTITUCIONAL</h3>
+
+                <ul>
+                    <li><a href="index2.html">INÍCIO</a></li>
+                    <li><a href="quemsomos2.html">QUEM SOMOS</a></li>
+                    <li><a href="index2.html">MENU</a></li>
+                    <li><a href="Bebidas2.html">BEBIDAS</a></li>
+                    <li><a href="combos2.html">COMBOS</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato -->
+            <div class="footer-coluna">
+                <h3>ENTRE EM CONTATO</h3>
+
+                <a href="https://wa.me/14998387107" target="_blank">WHATSAPP</a>
+            </div>
+
+            <!-- Redes -->
+            <div class="footer-coluna">
+                <h3>REDES SOCIAIS</h3>
+
+                <p class="footer-social">@artenachapa</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
