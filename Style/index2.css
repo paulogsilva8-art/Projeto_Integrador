@@ -286,6 +286,12 @@ h3 {
 
 /* Banner atrás dos lanches */
 .banner-cardapio {
-    background-image: url(img/fundo2.png);
-    height: 600px;
+    background-image: url("img/fundocardapio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+.art{
+    padding-top: 50px;
 }
