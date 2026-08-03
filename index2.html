@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Style/index2.css">
     <link rel="stylesheet" href="Style/footer2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         /* Importação da fonte Montserrat do Google Fonts */
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -56,9 +58,32 @@
 
     <!-- Conteúdo principal da página -->
     <main>
-        <div class="art">
-            <img src="img/artbanner.png" width="100%" height="800px">
-        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/artbanner.png" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/banner2.png" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/banner3.png" class="d-block w-100">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
         <div class="topo">
 
 
@@ -76,7 +101,7 @@
             </div>
             <!--niver-->
             <div class="img">
-                <a href="nivernachapa_lore2.html">
+                <a href="nivernachapa - Copia2.html">
                     <img src="img/aniversario.png" alt="aniversario">
                 </a>
             </div>
@@ -180,47 +205,71 @@
         <!-- A partir daq começa o rodapé -->
         <footer>
 
-            <div class="footer-container">
+    <div class="footer-container">
 
-                <!-- Logo -->
-                <div class="footer-logo">
-                    <img src="img/Logo- fundo removido.png" width="30%" height="30%" alt="Arte na Chapa">
+        <!-- Logo -->
+        <div class="footer-logo">
 
-                    <h2>ARTE NA CHAPA</h2>
+            <img src="img/Logo- fundo removido.png" alt="Arte na Chapa">
 
-                    <p>Hamburgueria</p>
-                </div>
+            <h2>ARTE NA CHAPA</h2>
 
-                <!-- Institucional -->
-                <div class="footer-coluna">
-                    <h3>INSTITUCIONAL</h3>
+            <p>Hamburgueria Artesanal</p>
 
-                    <ul>
-                        <li><a href="index2.html">INÍCIO</a></li>
-                        <li><a href="quemsomos2.html">QUEM SOMOS</a></li>
-                        <li><a href="#menul">MENU</a></li>
-                        <li><a href="Bebidas2.html">BEBIDAS</a></li>
-                        <li><a href="combos2.html">COMBOS</a></li>
-                    </ul>
-                </div>
+        </div>
 
-                <!-- Contato -->
-                <div class="footer-coluna">
-                    <h3>ENTRE EM CONTATO</h3></a>
+        <!-- Institucional -->
+        <div class="footer-coluna">
 
-                    <a href="https://wa.me/14998387107" target="_blank">WHATSAPP</a>
-                </div>
+            <h3>Institucional</h3>
 
-                <!-- Redes -->
-                <div class="footer-coluna">
-                    <h3>REDES SOCIAIS</h3>
+            <a href="index2.html">Início</a>
 
-                    <p class="footer-social">@artenachapa</p>
-                </div>
+            <a href="#menul">Cardápio</a>
 
-            </div>
+            <a href="quemsomos2.html">Quem Somos</a>
 
-        </footer>
+            <a href="combos2.html">Combos</a>
+
+            <a href="Bebidas2.html">Bebidas</a>
+
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-coluna">
+
+            <h3>Contato</h3>
+
+            <p>📍 Santa Cruz do Rio Pardo - SP</p>
+
+            <p>📞 (14) 99838-7107</p>
+
+            <p>🕒 Terça a Domingo</p>
+
+            <p>18h às 23h</p>
+
+        </div>
+
+        <!-- Redes -->
+        <div class="footer-coluna">
+
+            <h3>Redes</h3>
+
+            <a href="#">Instagram</a>
+
+            <a href="#">WhatsApp</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-copy">
+
+        © 2026 Arte na Chapa • Todos os direitos reservados.
+
+    </div>
+
+</footer>
 
 </body>
 
