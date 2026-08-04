@@ -7,7 +7,7 @@
     <title>Pedidos</title>
     <link rel="stylesheet" href="Style/footer2.css">
     <style>
-        /*Aqui é meio que tudo*/
+        /*Aqui que "tudo"*/
         * {
             margin: 0;
             padding: 0;
@@ -138,67 +138,74 @@
     </div>
 
     <div class="container">
-        <form>
+        <form id="pedidoForm">
 
             <div class="linha">
                 <div>
                     <label>Nome</label>
-                    <input type="text">
+                    <input type="text" name="nome">
                 </div>
 
                 <div>
                     <label>Telefone</label>
-                    <input type="text">
+                    <input type="text" name="telefone">
                 </div>
             </div>
 
             <label>Escolha seu Hambúrguer</label>
-            <select>
-                <option>Brie Burger</option>
-                <option>Queijo Coalho</option>
-                <option>Carne com Queijo</option>
-                <option>Catupiry com Bacon</option>
-                <option>Chicken</option>
-                <option>Quatro Queijos</option>
+            <select id="hamburguer">
+                <option value="0">Nenhum</option>
+                <option value="25">Brie Burger - R$25</option>
+                <option value="22">Queijo Coalho - R$22</option>
+                <option value="20">Carne com Queijo - R$20</option>
+                <option value="24">Catupiry com Bacon - R$24</option>
+                <option value="21">Chicken - R$21</option>
+                <option value="23">Quatro Queijos - R$23</option>
             </select>
 
             <label>Escolha seu Combo</label>
-            <select>
-                <option>Combo 1</option>
-                <option>Combo 2</option>
-                <option>Combo 3</option>
-            </select>
+<select id="combo">
+    <option value="0">Nenhum</option>
+    <option value="10">Combo 1 - R$10</option>
+    <option value="15">Combo 2 - R$15</option>
+    <option value="18">Combo 3 - R$18</option>
+</select>
 
             <div class="adicionais">
                 <h2>Adicionais</h2>
-                <label><input type="checkbox"> Bacon extra</label>
-                <label><input type="checkbox"> Queijo extra</label>
-                <label><input type="checkbox"> Cebola caramelizada</label>
+                <label><input type="checkbox" value="5"> Bacon extra (R$5)</label>
+                <label><input type="checkbox" value="4"> Queijo extra (R$4)</label>
+                <label><input type="checkbox" value="3"> Cebola caramelizada (R$3)</label>
             </div>
 
-            <label0>
-                <h2>Bebidas</h2></label>
-                <select>
-                    <option>Água</option>
-                    <option>Suco</option>
-                    <option>Refrigerante</option>
-                    <option>Cerveja</option>
-                </select>
+            <h2>Bebidas</h2>
+            <select id="bebida">
+                <option value="0">Nenhum</option>
+                <option value="3">Água marca Crystal- R$3,00</option>
+                <option value="6">Suco marca Del Valle - R$6,00</option>
+                <option value="7">Refrigerante Coca Cola- R$7,00</option>
+                <option value="6">Refrigerante Guaraná Antartica- R$6,00</option>
+                <option value="10">Cerveja long neck Heineken- R$10,00</option>
+                <option value="9">Cerveja long neck Budweiser- R$9,00</option>
+            </select>
 
-                <label>
-                    <h2>Endereço para entrega</h2>
-                </label>
-                <input type="text">
+            <label>
+                <h2>Endereço para entrega</h2>
+            </label>
+            <input type="text" name="endereco">
 
-                <label>
-                    <h2>Observações</h2>
-                </label>
-                <textarea placeholder="Ex: tirar cebola..."></textarea>
+            <label>
+                <h2>Observações</h2>
+            </label>
+            <textarea placeholder="Ex: tirar cebola..." name="observacoes"></textarea>
 
-                <button>Enviar Pedido</button>
+            <p class="total">Total: R$ <span id="total">0.00</span></p>
+
+            <button type="submit">Enviar Pedido</button>
 
         </form>
     </div>
+
     <br>
     <br>
     <br>
@@ -238,7 +245,7 @@
             <!-- Contato -->
             <div class="footer-coluna">
                 <h3>ENTRE EM CONTATO</h3>
-                ,
+                
 
                 <a href="https://wa.me/14998387107" target="_blank">ENTRE EM CONTATO</a>
             </div>
@@ -253,6 +260,23 @@
         </div>
 
     </footer>
+    <script>
+        function calcularTotal() {
+            let total = 0;
+
+            total += Number(document.getElementById("hamburguer").value);
+            total += Number(document.getElementById("combo").value);
+            total += Number(document.getElementById("bebida").value);
+
+            document.querySelectorAll('.adicionais input[type="checkbox"]:checked').forEach(item => {
+                total += Number(item.value);
+            });
+
+            document.getElementById("total").textContent = total.toFixed(2);
+        }
+
+        document.getElementById("pedidoForm").addEventListener("change", calcularTotal);
+    </script>
 </body>
 
 </html>
