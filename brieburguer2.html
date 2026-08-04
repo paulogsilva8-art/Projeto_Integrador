@@ -160,6 +160,9 @@ body{
 .btn-pedido:hover{
     background: black;
 }
+.login_btn{
+    display: none;
+}
 </style>
 </head>
 <body>
@@ -195,26 +198,24 @@ body{
 
             <div class="form-group">
                 <label>Email</label>
-                <input type="email" placeholder="seu@email.com">
+                <input type="email" placeholder="seu@email.com" id="email">
             </div>
 
             <div class="form-group">
                 <label>Senha</label>
-                <input type="password" placeholder="Sua senha">
+                <input type="password" placeholder="Sua senha" id="senha">
             </div>
 
             <div class="botoes">
 
-                <button class="btn btn-login">
+                <button class="btn btn-login" onclick="logarSenha()">
                     Login
                 </button>
-
-                <a href="Pedidos2.html" class="btn btn-pedido">
+                
+                <a href="Pedidos2.html" class="btn btn-pedido login_btn" id="pedido">
                     Fazer Pedido
                 </a>
-
             </div>
-
         </div>
 
     </div>
@@ -266,6 +267,20 @@ body{
         </div>
 
     </footer>
+    
+<script>
+function logarSenha(){
+    var emailLog = document.getElementById('email').value
+    var senhaLog = document.getElementById('senha').value
 
+    if(emailLog == "arte" && senhaLog == "nachapa"){
+        alert('Login Efetuado');
+   document.getElementById('pedido').style.display = 'block';
+    }else{
+        alert('Login Incorreto');
+
+    }
+}
+</script>
 </body>
 </html>

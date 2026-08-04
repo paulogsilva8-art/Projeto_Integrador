@@ -5,54 +5,53 @@
     box-sizing: border-box;
 }
 
-/* ===== Container principal do menu (agora é uma navbar Bootstrap) ===== */
+/* Container principal do menu */
 
 .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100px;
     background-color: #b30000;
+    justify-content: space-between;
+    color: antiquewhite;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 10px 20px;
 }
 
-/* Logo dentro da navbar */
-.logo-item img {
-    height: 80px;
-    width: auto;
+.menu img {
+    width: 100%;
 }
 
 .item {
+    text-decoration: none;
     color: antiquewhite;
-}
-
-.item .nav-link {
-    font-size: 28px;
-    color: antiquewhite;
+    font-size: 35px;
     cursor: pointer;
-    padding: 8px 0;
+
+    line-height: 100px;
 }
 
-.item .nav-link:hover {
-    color: #222;
+.carrinho {
+    text-align: right;
+    width: 5%;
+    padding: 20px 10px;
+
+
 }
 
 .carrinho img {
-    width: 50px;
+    width: 60px;
 }
 
-/* Ícone do botão hambúrguer (deixa visível no fundo vermelho) */
-.navbar-toggler {
-    border-color: antiquewhite;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(250, 235, 215, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
 
 .localizacao {
     width: 100%;
     min-height: 100vh;
+
+
     padding: 80px 0;
     display: flex;
     flex-direction: column;
@@ -64,19 +63,18 @@
 .titulo-local {
     text-align: center;
     margin-bottom: 50px;
-    padding: 0 15px;
 }
 
 .titulo-local h3 {
     color: #B30000;
-    font-size: clamp(22px, 4vw, 35px);
+    font-size: 35px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 2px;
 }
 
 .titulo-local h1 {
     color: #111;
-    font-size: clamp(32px, 7vw, 90px);
+    font-size: 90px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 3px;
 }
@@ -84,7 +82,6 @@
 /* Linha decorativa */
 .linha {
     width: 350px;
-    max-width: 60%;
     height: 4px;
     background: #B30000;
     margin: 15px auto;
@@ -94,21 +91,31 @@
 
 /* Container principal da localização */
 .container-mapa {
-    width: 90%;
-    max-width: 1200px;
+    text-align: center;
+    width: 85%;
     margin: auto;
     background: #B30000;
     border-radius: 35px;
-    padding: 25px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     margin-bottom: 50px;
 }
 
 
 /* Card das informações */
 .info-local {
+    width: 350px;
+    min-height: 500px;
+
     background: #8f0000;
+
     border-radius: 25px;
+
     padding: 35px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,7 +126,7 @@
 /* Nome do local */
 .info-local h2 {
     color: white;
-    font-size: clamp(28px, 4vw, 48px);
+    font-size: 48px;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 25px;
 }
@@ -131,30 +138,29 @@
 /* Texto do endereço */
 .info-local p {
     color: white;
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 23px;
+    line-height: 38px;
     margin-bottom: 35px;
 }
 
 /* Destaques amarelos */
 .avaliacao {
+
     color: #ffd000;
-    font-size: 28px;
+    font-size: 33px;
     font-weight: bold;
     margin-bottom: 35px;
 }
 
 /* Botão do maps */
 .btn-chegar {
-    display: inline-block;
     text-align: center;
     width: 240px;
-    max-width: 100%;
     padding: 18px;
     background: white;
     color: #B30000;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     border-radius: 18px;
     transition: 0.3s;
@@ -165,32 +171,44 @@
     transform: scale(1.03);
 }
 
-/* mapa (o tamanho agora é controlado pela classe .ratio do Bootstrap) */
-.mapa {
-    border-radius: 25px;
-    overflow: hidden;
-}
+/* mapa */
 
 .mapa iframe {
+    width: 800px;
+    height: 500px;
+
     border: none;
+    border-radius: 25px;
 }
 
 /*tres partes principais*/
 .topo {
     width: 100%;
-    padding: 50px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+.img {
+    margin-top: 50px;
+
+
+
 }
 
 .img a {
     text-decoration: none;
     color: antiquewhite;
-    display: block;
 }
 
 .img img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 320 / 420;
+    width: 320px;
+    height: 420px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     transition: 0.4s;
@@ -206,16 +224,27 @@
 /* Área principal do cardápio */
 .cardapio {
     width: 100%;
-    padding: 40px 0;
-    margin-top: 40px;
+
+    padding: 40px;
+    margin-top: 80px;
+}
+
+/* container dos lanches */
+.lanches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+    gap: 20px;
+
 }
 
 /* links */
 .lanches a {
     overflow: hidden;
     display: block;
-    max-width: 350px;
-    margin: 0 auto;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
     transition: 0.4s ease;
@@ -223,16 +252,15 @@
 
 /* imagens dos lanches */
 .lanches img {
-    width: 100%;
-    height: auto;
-    max-width: 350px; 
-    aspect-ratio: 350 / 230;
+    width: 350px;
+    height: 230px;
+
     object-fit: cover;
     border-radius: 16px;
     display: block;
+
     transition: transform 0.4s ease;
     cursor: pointer;
-    margin: 0 auto;   
 }
 
 /* hover*/
@@ -256,51 +284,151 @@ h3 {
     font-family: "Montserrat", sans-serif;
 }
 
-/* Banner atrás dos lanches / carrossel */
-.art {
+/* Banner atrás dos lanches */
+.art{
     padding-top: 50px;
 }
-
-.carousel-item img {
+.carousel-item img{
     width: 100%;
-    height: 55vh;
-    min-height: 220px;
-    max-height: 600px;
+    height: 600px;
     object-fit: cover;
 }
+.footer{
 
-/* ===== Ajustes finos por tamanho de tela ===== */
-@media (max-width: 991.98px) {
-    .item .nav-link {
-        font-size: 22px;
-        padding: 10px 0;
-    }
+    width:100%;
 
-    .carrinho {
-        margin-top: 10px;
-        padding-bottom: 10px;
-    }
+    background:#f8f5ef;
 
-    .carrinho img {
-        width: 40px;
-    }
+    border-top:5px solid #B30000;
 
-    .info-local {
-        text-align: center;
-        align-items: center;
-    }
+    border-radius:30px 30px 0 0;
+
+    margin-top:70px;
+
+    box-shadow:0 -5px 15px rgba(0,0,0,.12);
+
 }
 
-@media (max-width: 575.98px) {
-    .logo-item img {
-        height: 60px;
-    }
+.footer-container{
 
-    .info-local h2 {
-        margin-bottom: 15px;
-    }
+    width:90%;
 
-    .info-local p {
-        margin-bottom: 20px;
-    }
+    margin:auto;
+
+    padding:35px 0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    flex-wrap:wrap;
+
+}
+
+/* LOGO */
+
+.footer-logo{
+
+    width:220px;
+
+    text-align:center;
+
+}
+
+.footer-logo img{
+
+    width:90px;
+
+    margin-bottom:10px;
+
+}
+
+.footer-logo h2{
+
+    font-size:30px;
+
+    color:#222;
+
+    margin-bottom:5px;
+
+}
+
+.footer-logo p{
+
+    font-size:18px;
+
+    color:#666;
+
+}
+
+/* COLUNAS */
+
+.footer-coluna{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.footer-coluna h3{
+
+    color:#B30000;
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+    text-transform:uppercase;
+
+}
+
+.footer-coluna a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.footer-coluna a:hover{
+
+    color:#B30000;
+
+    padding-left:6px;
+
+}
+
+.footer-coluna p{
+
+    color:#444;
+
+    font-size:18px;
+
+    line-height:28px;
+
+}
+
+/* COPYRIGHT */
+
+.footer-copy{
+
+    border-top:1px solid #ddd;
+
+    text-align:center;
+
+    padding:15px;
+
+    font-size:16px;
+
+    color:#666;
+
 }
