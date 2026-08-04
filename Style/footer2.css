@@ -1,33 +1,30 @@
 /* ===== RODAPÉ ===== */
 
-
 footer {
     width: 100%;
     background-color: #f2f2f2;
     border-top: 4px solid #b30000;
     border-radius: 30px 30px 0 0;
     box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.08);
-    padding: 50px 60px;
+    padding: 50px 20px 30px;
+    margin-top: 60px;
 }
 
-/* Container interno */
+/* Container interno (a distribuição em colunas agora é feita pelo grid do Bootstrap: .row / .col-*) */
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Logo */
 .footer-logo {
-    max-width: 220px;
     text-align: center;
 }
 
 .footer-logo img {
     width: 90px;
     margin-bottom: 10px;
+    border-radius: 12px;
 }
 
 .footer-logo h2 {
@@ -43,35 +40,36 @@ footer {
 
 /* Colunas */
 .footer-coluna {
-    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /* Títulos */
 .footer-coluna h3 {
     font-size: 16px;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-/* Lista */
-.footer-coluna ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-coluna ul li {
     margin-bottom: 10px;
+    color: #000;
+    text-transform: uppercase;
 }
 
 /* Links */
 .footer-coluna a {
     text-decoration: none;
-    color: hsl(0, 0%, 0%);
+    color: #000;
+    font-size: 16px;
     transition: 0.3s;
 }
 
 .footer-coluna a:hover {
     color: hsl(0, 84%, 27%);
+    padding-left: 4px;
+}
+
+.footer-coluna p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* Redes */
@@ -79,6 +77,25 @@ footer {
     font-size: 18px;
 }
 
-.footer-logo img {
-    border-radius: 12px;
+/* COPYRIGHT */
+.footer-copy {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #666;
+    margin-top: 30px;
+}
+
+/* ===== Ajustes para telas pequenas ===== */
+@media (max-width: 767.98px) {
+    footer {
+        padding: 40px 15px 20px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .footer-coluna {
+        text-align: center;
+        align-items: center;
+    }
 }
