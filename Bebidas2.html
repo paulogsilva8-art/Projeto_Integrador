@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="Estilo.css">
     <link rel="stylesheet" href="Style/footer2.css">
     <style>
-       body {
+
+        
+        body {
             margin: 0;
             padding: 0;
             background-image: url("img/fundotundo.webp");
-            
+
         }
+
         .banner {
             background: linear-gradient(rgba(180, 0, 0, 0.422), rgba(180, 0, 0, 0.614)),
                 url('img/fundo\ do\ banner.png');
@@ -31,13 +34,13 @@
         }
 
         .conteiner_bebidas {
-          display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         gap: 20px;
-         padding: 30px;
-         width: 100%;
-         box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            width: 100%;
+            box-sizing: border-box;
 
         }
 
@@ -48,10 +51,11 @@
             height: 325px;
             overflow: hidden;
         }
+
         .itens_cont:hover {
             height: 400px;
             transition: height 0.9s ease;
-     
+
         }
 
         .itens_cont img {
@@ -67,20 +71,39 @@
             text-align: center;
             color: antiquewhite;
         }
+
         .itens_cont p {
             text-align: center;
             margin-top: 20px;
             color: antiquewhite;
         }
 
-        h2{
+        h2 {
             cursor: pointer;
         }
-</style>
+        button {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 50%;
+            padding: 15px;
+            background: rgba(155, 0, 4);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: rgba(155, 0, 4);
+            transform: scale(1.02);
+        }
+    </style>
 </head>
 
 <body>
- <header>
+    <header>
         <div class="banner">
             <h1>BEBIDAS</h1>
         </div>
@@ -89,45 +112,49 @@
         <div class="conteiner_bebidas">
             <div class="itens_cont">
                 <img src="img/agua.png">
-                
 
-                    <h2>ÁGUA</h2>
-                        <p>Crystal R$3,00</p>
-                        <p>Minalba R$4,00</p>
-                
+
+                <h2>ÁGUA</h2>
+                <p>Crystal R$3,00</p>
+                <p>Minalba R$4,00</p>
+
             </div>
 
             <div class="itens_cont">
                 <img src="img/refrigerantes.png">
-                   
-                     <h2>REFRIGERANTES</h2>
-                    <p>Coca-Cola R$7,00</p>
-                    <p>Guaraná Antartica R$6,00</p>
-                
+
+                <h2>REFRIGERANTES</h2>
+                <p>Coca-Cola R$7,00</p>
+                <p>Guaraná Antartica R$6,00</p>
+
             </div>
-         
+
             <div class="itens_cont">
                 <img src="img/sucos.png">
-               
-                    <h2>SUCOS</h2>
-                    <p>Del Valle R$6,00</p>
-                    <p>Manguary R$7,00</p>
-                
+
+                <h2>SUCOS</h2>
+                <p>Del Valle R$6,00</p>
+                <p>Manguary R$7,00</p>
+
             </div>
 
             <div class="itens_cont">
                 <img src="img/long.png">
-                
-                     <h2>LONG NECK</h2>
-                    <p>Heineken R$10,00</p>
-                    <p>Budweiser R$9,00</p>
-                
+
+                <h2>LONG NECK</h2>
+                <p>Heineken R$10,00</p>
+                <p>Budweiser R$9,00</p>
+
             </div>
 
         </div>
     </main>
 
-<!-- A partir daq começa o rodapé -->
+    <a href="Pedidos2.html">
+        <button>Fazer pedido</button>
+    </a>
+
+    <!-- A partir daq começa o rodapé -->
     <footer>
 
         <div class="footer-container">
@@ -156,7 +183,9 @@
 
             <!-- Contato -->
             <div class="footer-coluna">
-                <a href="https://wa.me/14998387107" target="_blank"><h3>ENTRE EM CONTATO</h3></a>
+                <a href="https://wa.me/14998387107" target="_blank">
+                    <h3>ENTRE EM CONTATO</h3>
+                </a>
 
                 <a href="#">ENTRE EM CONTATO</a>
             </div>
@@ -171,6 +200,7 @@
         </div>
 
     </footer>
-    
+
 </body>
+
 </html>
