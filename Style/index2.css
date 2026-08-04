@@ -214,6 +214,8 @@
 .lanches a {
     overflow: hidden;
     display: block;
+    max-width: 350px;
+    margin: 0 auto;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
     transition: 0.4s ease;
@@ -223,12 +225,14 @@
 .lanches img {
     width: 100%;
     height: auto;
+    max-width: 350px; 
     aspect-ratio: 350 / 230;
     object-fit: cover;
     border-radius: 16px;
     display: block;
     transition: transform 0.4s ease;
     cursor: pointer;
+    margin: 0 auto;   
 }
 
 /* hover*/
@@ -270,6 +274,11 @@ h3 {
     .item .nav-link {
         font-size: 22px;
         padding: 10px 0;
+    }
+
+    .carrinho {
+        margin-top: 10px;
+        padding-bottom: 10px;
     }
 
     .carrinho img {
