@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 04</title>
+    <script>
+        var nome = prompt('digita seu nome');
+        var classe = prompt('digite sua classe (1/2/3)');
+        var venda = prompt('qual valor da venda');
+        if (classe == '1'){ 
+
+            var total = 1500 + (0.025 * venda);
+            document.write('você ira receber nesse mes: ' + total + 'reais.');
+
+        }else if (classe == '2'){ 
+
+            var total = 2000 + (0.03 * venda);
+            document.write('você ira receber nesse mes: ' + total + 'reais.');
+                         
+        }else if (classe == '3'){ 
+                      
+            var total = 2500 + (0.035 * venda);
+            document.write('você ira receber nesse mes: ' + total + 'reais.');
+
+        }else{
+
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
