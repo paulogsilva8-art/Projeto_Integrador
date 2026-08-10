@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = Number(prompt('digite valor a'));
+        var b = Number(prompt('digite valor b'));
+        var c = Number(prompt('digite valor c'));
+        var delta = b * b - 4 * a * c;
+        if(a != 0 && delta >=0){
+        var R1 = ( - b + Math.sqrt(delta))/(2 * a);
+        var R2 = ( - b - Math.sqrt(delta))/(2 * a);
+        document.write('R1 = ' + R1.toFixed(2) + '<br/>');
+        document.write('R2 = ' + R2.toFixed(2));
+        }else{
+            document.write('impossivel calcular');
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
