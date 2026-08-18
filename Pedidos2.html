@@ -182,11 +182,13 @@
             <select id="bebida">
                 <option value="0">Nenhum</option>
                 <option value="3">Água marca Crystal- R$3,00</option>
+                <option value="3">Água marca Crystal com gás- R$3,00</option>
                 <option value="6">Suco marca Del Valle - R$6,00</option>
+                <option value="7">Suco Prats 330ml - R$7,00</option>
                 <option value="7">Refrigerante Coca Cola- R$7,00</option>
                 <option value="6">Refrigerante Guaraná Antartica- R$6,00</option>
                 <option value="10">Cerveja long neck Heineken- R$10,00</option>
-                <option value="9">Cerveja long neck Budweiser- R$9,00</option>
+                <option value="7">Cerveja long neck Sol- R$7,00</option>
             </select>
 
             <label>
@@ -215,51 +217,53 @@
     <br>
 
 
-    <!-- A partir daq começa o rodapé -->
-    <footer>
+   <!-- A partir daq começa o rodapé -->
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-container row gy-4">
 
-        <div class="footer-container">
+                    <!-- Logo -->
+                    <div class="col-12 col-md-3 footer-logo">
+                        <img src="img/Logo- fundo removido.png" alt="Arte na Chapa">
+                        <h2>ARTE NA CHAPA</h2>
+                        <p>Hamburgueria Artesanal</p>
+                    </div>
 
-            <!-- Logo -->
-            <div class="footer-logo">
-                <img src="img/Logo- fundo removido.png" width="30%" height="30%" alt="Arte na Chapa">
+                    <!-- Institucional -->
+                    <div class="col-6 col-md-3 footer-coluna">
+                        <h3>Institucional</h3>
+                        <a href="index.html">Início</a>
+                        <a href="#menul">Cardápio</a>
+                        <a href="quemsomos2.html">Quem Somos</a>
+                        <a href="combos2.html">Combos</a>
+                        <a href="Bebidas2.html">Bebidas</a>
+                    </div>
 
-                <h2>ARTE NA CHAPA</h2>
+                    <!-- Contato -->
+                    <div class="col-6 col-md-3 footer-coluna">
+                        <h3>Contato</h3>
+                        <p>📍 Santa Cruz do Rio Pardo - SP</p>
+                        <p>📞 (14) 99838-7107</p>
+                        <p>🕒 Terça a Domingo</p>
+                        <p>18h às 23h</p>
+                    </div>
 
-                <p>Hamburgueria</p>
+                    <!-- Redes -->
+                    <div class="col-6 col-md-3 footer-coluna">
+                        <h3>Redes Sociais</h3>
+                        <a href="https://www.instagram.com/">Instagram</a>
+                        <a href="https://web.whatsapp.com/">WhatsApp</a>
+                        <a href="https://www.facebook.com/?locale=pt_BR">facebook</a>
+                    </div>
+
+                </div>
             </div>
 
-            <!-- Institucional -->
-            <div class="footer-coluna">
-                <h3>INSTITUCIONAL</h3>
-
-                <ul>
-                    <li><a href="index.html">INÍCIO</a></li>
-                    <li><a href="index.html">QUEM SOMOS</a></li>
-                    <li><a href="index2.html">MENU</a></li>
-                    <li><a href="Bebidas2.html">BEBIDAS</a></li>
-                    <li><a href="combos2.html">COMBOS</a></li>
-                </ul>
+            <div class="footer-copy">
+                © 2026 Arte na Chapa • Todos os direitos reservados.
             </div>
 
-            <!-- Contato -->
-            <div class="footer-coluna">
-                <h3>ENTRE EM CONTATO</h3>
-                
-
-                <a href="https://wa.me/14998387107" target="_blank">ENTRE EM CONTATO</a>
-            </div>
-
-            <!-- Redes -->
-            <div class="footer-coluna">
-                <h3>REDES SOCIAIS</h3>
-
-                <p class="footer-social">@artenachapa</p>
-            </div>
-
-        </div>
-
-    </footer>
+        </footer>
     <script>
         function calcularTotal() {
             let total = 0;
