@@ -138,9 +138,7 @@ body{
         </button>
 
 
-        <a href="Pedidos2.html" class="btn btn-pedido login_btn" id="pedido">
-            Fazer Pedido
-        </a>
+
 
     </div>
 
@@ -156,8 +154,9 @@ function logarSenha(){
     if(emailLog == "arte" && senhaLog == "nachapa"){
 
         alert("Login efetuado!");
+        window.location.href = "pedidos2.html"
 
-        document.getElementById("pedido").style.display = "block";
+        
 
     }else{
 
