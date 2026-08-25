@@ -2,269 +2,771 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bebidas</title>
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="Style/index2.css">
+
     <link rel="stylesheet" href="Style/footer2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Bootstrap 5.2.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+
+
     <style>
 
-        
+        /* =========================
+           BODY
+        ========================= */
+
         body {
             margin: 0;
             padding: 0;
             background-image: url("img/fundotundo.webp");
-
         }
 
+
+        /* =========================
+           BANNER
+        ========================= */
+
         .banner {
-            background: linear-gradient(rgba(180, 0, 0, 0.422), rgba(180, 0, 0, 0.614)),
+
+            background:
+                linear-gradient(
+                    rgba(180, 0, 0, 0.422),
+                    rgba(180, 0, 0, 0.614)
+                ),
                 url(img/bannertds.webp);
+
             background-size: cover;
             background-position: center;
+
             color: antiquewhite;
+
             text-align: center;
+
             padding: 60px 20px;
         }
 
+
         .banner h1 {
+
             font-size: 70px;
+
             letter-spacing: 5px;
+
+            margin: 0;
         }
 
+
+        /* =========================
+           CONTAINER BEBIDAS
+        ========================= */
+
         .conteiner_bebidas {
+
             padding: 30px;
         }
 
+
+        /* =========================
+           CARDS
+        ========================= */
+
         .itens_cont {
+
             background-color: #970101;
+
             border-radius: 10px;
+
             height: 325px;
+
             overflow: hidden;
+
+            transition: height 0.9s ease;
         }
+
 
         .itens_cont:hover {
-            height: 450px;
-            transition: height 0.9s ease;
 
+            height: 450px;
         }
 
+
         .itens_cont img {
-            justify-content: space-around;
+
             width: 100%;
+
             padding: 5px;
+
             border-radius: 10px;
+
             box-sizing: border-box;
         }
 
+
         .itens_cont h2 {
+
             margin-top: 40px;
+
             text-align: center;
+
             color: antiquewhite;
+
+            cursor: pointer;
         }
+
 
         .itens_cont p {
+
             text-align: center;
+
             margin-top: 20px;
+
             color: antiquewhite;
         }
 
-        h2 {
-            cursor: pointer;
-        }
-        button {
-            margin-top: 50px;
-            margin-bottom: 50px;
-            width: 50%;
-            padding: 15px;
-            background: rgba(155, 0, 4);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-            
+
+        /* =========================
+           BOTÃO
+        ========================= */
+
+        .botao-pedido {
+
+            text-align: center;
         }
 
-        button:hover {
+
+        button {
+
+            margin-top: 50px;
+
+            margin-bottom: 50px;
+
+            width: 50%;
+
+            padding: 15px;
+
             background: rgba(155, 0, 4);
+
+            color: white;
+
+            border: none;
+
+            border-radius: 10px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        button:hover {
+
+            background: rgba(155, 0, 4);
+
             transform: scale(1.02);
         }
 
-        /* ===== Responsividade ===== */
+
+        /* =================================================
+           TABLET
+           Até 991.98px
+        ================================================= */
+
+        @media (max-width: 991.98px) {
+
+            .conteiner_bebidas {
+
+                padding: 25px 15px;
+            }
+
+
+            /*
+                No tablet o card pode crescer
+                conforme o conteúdo.
+            */
+
+            .itens_cont {
+
+                height: auto;
+
+                min-height: 350px;
+
+                overflow: visible;
+            }
+
+
+            .itens_cont:hover {
+
+                height: auto;
+            }
+
+
+            button {
+
+                width: 70%;
+            }
+
+
+            footer {
+
+                padding: 40px 20px;
+            }
+
+        }
+
+
+        /* =================================================
+           CELULAR
+           Até 767.98px
+        ================================================= */
+
         @media (max-width: 767.98px) {
+
+            /* BANNER */
+
             .banner {
+
                 padding: 40px 15px;
             }
 
+
             .banner h1 {
+
                 font-size: 42px;
+
                 letter-spacing: 3px;
             }
 
-            .itens_cont {
-                height: 300px;
+
+            /* CONTAINER */
+
+            .conteiner_bebidas {
+
+                padding: 20px 15px;
             }
+
+
+            /*
+                CORREÇÃO DOS CARDS
+
+                A altura fica automática para
+                nenhum conteúdo ser cortado.
+            */
+
+            .itens_cont {
+
+                height: auto;
+
+                min-height: 0;
+
+                overflow: visible;
+            }
+
 
             .itens_cont:hover {
-                height: 420px;
+
+                height: auto;
             }
+
+
+            .itens_cont h2 {
+
+                font-size: 24px;
+
+                margin-top: 25px;
+            }
+
+
+            .itens_cont p {
+
+                margin-top: 15px;
+
+                font-size: 15px;
+
+                padding-bottom: 5px;
+            }
+
+
+            /* BOTÃO */
 
             button {
+
                 width: 80%;
             }
+
+
+            /* RODAPÉ */
+
+            footer {
+
+                padding: 40px 20px;
+            }
+
+
+            .footer-logo,
+            .footer-coluna {
+
+                text-align: center;
+            }
+
         }
 
+
+        /* =================================================
+           CELULAR PEQUENO
+           Até 575.98px
+        ================================================= */
+
         @media (max-width: 575.98px) {
+
+            /* BANNER */
+
+            .banner {
+
+                padding: 35px 10px;
+            }
+
+
             .banner h1 {
+
                 font-size: 32px;
+
                 letter-spacing: 1px;
             }
 
+
+            /* CONTAINER */
+
+            .conteiner_bebidas {
+
+                padding: 15px 10px;
+            }
+
+
+            /* CARDS */
+
+            .itens_cont {
+
+                height: auto;
+
+                min-height: 0;
+
+                overflow: visible;
+            }
+
+
+            .itens_cont:hover {
+
+                height: auto;
+            }
+
+
+            .itens_cont h2 {
+
+                font-size: 21px;
+
+                margin-top: 20px;
+            }
+
+
+            .itens_cont p {
+
+                font-size: 14px;
+
+                margin-top: 12px;
+
+                padding-bottom: 5px;
+            }
+
+
+            /* BOTÃO */
+
             button {
+
                 width: 90%;
             }
+
+
+            /* RODAPÉ */
+
+            footer {
+
+                padding: 35px 15px;
+            }
+
+
+            .footer-logo img {
+
+                max-width: 150px;
+            }
+
+
+            .footer-copy {
+
+                text-align: center;
+
+                font-size: 13px;
+
+                padding: 15px;
+            }
+
         }
+
     </style>
+
 </head>
 
 
 <body>
-    <header>
-        <div class="banner">
-            <h1>BEBIDAS</h1>
-        </div>
-    </header>
-    <main>
-        <div class="container conteiner_bebidas">
-            <div class="row g-4 justify-content-center">
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="itens_cont">
-                        <img src="img/agua.png">
 
+
+    <!-- =================================================
+         BANNER
+    ================================================= -->
+
+    <header>
+
+        <div class="banner">
+
+            <h1>BEBIDAS</h1>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         CONTEÚDO
+    ================================================= -->
+
+    <main>
+
+        <div class="container conteiner_bebidas">
+
+            <div class="row g-4 justify-content-center">
+
+
+                <!-- =========================
+                     ÁGUA
+                ========================= -->
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="itens_cont">
+
+                        <img src="img/agua.png" alt="Água">
 
                         <h2>ÁGUA</h2>
-                        <p>Crystal sem gás R$3,00</p>
-                        <p>Crystal com gás R$3,00</p>
+
+                        <p>
+                            Crystal sem gás R$3,00
+                        </p>
+
+                        <p>
+                            Crystal com gás R$3,00
+                        </p>
 
                     </div>
+
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+
+
+                <!-- =========================
+                     REFRIGERANTES
+                ========================= -->
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
                     <div class="itens_cont">
-                        <img src="img/refrigerantes.png">
+
+                        <img src="img/refrigerantes.png"
+                            alt="Refrigerantes">
 
                         <h2>REFRIGERANTES</h2>
-                        <p>Coca-Cola R$7,00</p>
-                        <p>Guaraná Antartica R$6,00</p>
+
+                        <p>
+                            Coca-Cola R$7,00
+                        </p>
+
+                        <p>
+                            Guaraná Antartica R$6,00
+                        </p>
 
                     </div>
+
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+
+
+                <!-- =========================
+                     SUCOS
+                ========================= -->
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
                     <div class="itens_cont">
-                        <img src="img/sucos.png">
+
+                        <img src="img/sucos.png"
+                            alt="Sucos">
 
                         <h2>SUCOS</h2>
-                        <p>Del Valle 290ml R$6,00</p>
-                        <p>Prats 330ml R$7,00</p>
+
+                        <p>
+                            Del Valle 290ml R$6,00
+                        </p>
+
+                        <p>
+                            Prats 330ml R$7,00
+                        </p>
 
                     </div>
+
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+
+
+                <!-- =========================
+                     LONG NECK
+                ========================= -->
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
                     <div class="itens_cont">
-                        <img src="img/long.png">
+
+                        <img src="img/long.png"
+                            alt="Long Neck">
 
                         <h2>LONG NECK</h2>
-                        <p>Heineken R$10,00</p>
-                        <p>Sol R$7,00</p>
+
+                        <p>
+                            Heineken R$10,00
+                        </p>
+
+                        <p>
+                            Sol R$7,00
+                        </p>
 
                     </div>
+
                 </div>
 
+
             </div>
+
         </div>
+
     </main>
-    
-    <div style="text-align: center;">
-    <a href="loginparacont.html">
-        <button>Fazer pedido</button>
-    </a>
+
+
+
+    <!-- =================================================
+         BOTÃO FAZER PEDIDO
+    ================================================= -->
+
+    <div class="botao-pedido">
+
+        <a href="loginparacont.html">
+
+            <button>
+                Fazer pedido
+            </button>
+
+        </a>
+
     </div>
 
 
-    <!-- A partir daq começa o rodapé -->
+
+    <!-- =================================================
+         RODAPÉ
+    ================================================= -->
+
     <footer>
-         <div class="container-fluid">
-                <div class="footer-container row gy-4">
 
-                    <!-- Logo -->
-                    <div class="col-12 col-md-3 footer-logo">
-                        <img src="img/Logo- fundo removido.png" alt="Arte na Chapa">
-                        <h2>ARTE NA CHAPA</h2>
-                        <p>Hamburgueria Artesanal</p>
-                    </div>
+        <div class="container-fluid">
 
-                    <!-- Institucional -->
-                    <div class="col-6 col-md-3 footer-coluna">
-                        <h3>Institucional</h3>
-                        <a href="index.html">Início</a>
-                        <a href="index.html">Cardápio</a>
-                        <a href="quemsomos2.html">Quem Somos</a>
-                        <a href="combos2.html">Combos</a>
-                        <a href="Bebidas2.html">Bebidas</a>
-                    </div>
+            <div class="footer-container row gy-4">
 
-                    <!-- Contato -->
-                    <div class="col-6 col-md-3 footer-coluna">
-                        <h3>Contato</h3>
-                        <p> Santa Cruz do Rio Pardo - SP</p>
-                        <p> (14) 99838-7107</p>
-                        <p> Terça a Domingo</p>
-                        <p>18h às 23h</p>
-                    </div>
 
-                    <!-- Redes -->
-                    <div class="col-6 col-md-3 footer-coluna">
-                        <h3>Redes Sociais</h3>
-                        <a href="https://www.instagram.com/">Instagram</a>
-                        <a href="https://web.whatsapp.com/">WhatsApp</a>
-                        <a href="https://www.facebook.com/?locale=pt_BR">facebook</a>
-                    </div>
+                <!-- =========================
+                     LOGO
+                ========================= -->
+
+                <div class="col-12 col-md-3 footer-logo">
+
+                    <img src="img/Logo- fundo removido.png"
+                        alt="Arte na Chapa">
+
+                    <h2>
+                        ARTE NA CHAPA
+                    </h2>
+
+                    <p>
+                        Hamburgueria Artesanal
+                    </p>
 
                 </div>
+
+
+
+                <!-- =========================
+                     INSTITUCIONAL
+                ========================= -->
+
+                <div class="col-12 col-md-3 footer-coluna">
+
+                    <h3>
+                        Institucional
+                    </h3>
+
+                    <a href="index.html">
+                        Início
+                    </a>
+
+                    <a href="index.html">
+                        Cardápio
+                    </a>
+
+                    <a href="quemsomos2.html">
+                        Quem Somos
+                    </a>
+
+                    <a href="combos2.html">
+                        Combos
+                    </a>
+
+                    <a href="Bebidas2.html">
+                        Bebidas
+                    </a>
+
+                </div>
+
+
+
+                <!-- =========================
+                     CONTATO
+                ========================= -->
+
+                <div class="col-12 col-md-3 footer-coluna">
+
+                    <h3>
+                        Contato
+                    </h3>
+
+                    <p>
+                        Santa Cruz do Rio Pardo - SP
+                    </p>
+
+                    <p>
+                        (14) 99838-7107
+                    </p>
+
+                    <p>
+                        Terça a Domingo
+                    </p>
+
+                    <p>
+                        18h às 23h
+                    </p>
+
+                </div>
+
+
+
+                <!-- =========================
+                     REDES SOCIAIS
+                ========================= -->
+
+                <div class="col-12 col-md-3 footer-coluna">
+
+                    <h3>
+                        Redes Sociais
+                    </h3>
+
+                    <a href="https://www.instagram.com/">
+                        Instagram
+                    </a>
+
+                    <a href="https://web.whatsapp.com/">
+                        WhatsApp
+                    </a>
+
+                    <a href="https://www.facebook.com/?locale=pt_BR">
+                        Facebook
+                    </a>
+
+                </div>
+
+
             </div>
 
-            <div class="footer-copy">
-                © 2026 Arte na Chapa • Este é um site institucional
-                sem fins lucrativos, desenvolvido para fins acadêmicos.
-                As informações apresentadas podem conter erros.
-            </div>
-
-        
-    </footer>
-      
-    
-<!-- Início do widget do VLibras -->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
         </div>
+
+
+
+        <!-- =========================
+             COPYRIGHT
+        ========================= -->
+
+        <div class="footer-copy">
+
+            © 2026 Arte na Chapa • Este é um site institucional
+            sem fins lucrativos, desenvolvido para fins acadêmicos.
+            As informações apresentadas podem conter erros.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         VLibras
+    ================================================= -->
+
+    <div vw class="enabled">
+
+        <div vw-access-button class="active"></div>
+
+        <div vw-plugin-wrapper>
+
+            <div class="vw-plugin-top-wrapper"></div>
+
+        </div>
+
     </div>
+
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+
     <script>
+
         new window.VLibras.Widget({
+
             rootPwa: 'https://vlibras.gov.br/app'
+
         });
+
     </script>
-    <!-- Fim do widget do VLibras -->
-    
+
+
 </body>
 
 </html>
