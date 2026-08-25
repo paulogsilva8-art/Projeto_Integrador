@@ -840,7 +840,7 @@
                 .querySelectorAll(
                     '.adicionais input[type="checkbox"]:checked'
                 )
-                .forEach(item => {
+                .forEach(item => { /*Para cada adicional encontrado, faça alguma coisa.*/
 
                     total += Number(item.value);
 
@@ -848,14 +848,14 @@
 
 
             document.getElementById("total").textContent =
-                total.toFixed(2);
+                total.toFixed(2); /*Faz o número aparecer com duas casas decimais.*/
 
         }
 
 
         document
             .getElementById("pedidoForm")
-            .addEventListener("change", calcularTotal);
+            .addEventListener("change", calcularTotal); /*Sempre que alguma opção do formulário mudar, execute calcularTotal().*/
 
     </script>
 
