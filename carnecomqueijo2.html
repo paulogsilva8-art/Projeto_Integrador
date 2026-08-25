@@ -4,61 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Carne e Queijo</title>
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- CSS ORIGINAL DO RODAPÉ -->
     <link rel="stylesheet" href="Style/footer2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP 5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+
     <style>
-        /* Importação da fonte Montserrat do Google Fonts */
+
+        /* IMPORTAÇÃO DA FONTE */
+
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-        /* tudinho */
+
+
+        /* TUDINHO */
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
-
         }
 
+
+        /* BODY */
+
         body {
-            background-image: url(img/fundotundo.png);
+            background-image: url(img/fundotundo.webp);
             color: hsl(0, 0%, 0%);
         }
 
-        /* Banner */
-        .banner {
-            background-image: url('img/fundotundo.webp');
-            ;
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-            margin-bottom: 50px;
-        }
 
-        .banner h1 {
-            font-size: 80px;
-            letter-spacing: 5px;
-        }
-
-
-        /* HERO */
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
             width: 100%;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 60px;
-            gap: 60px;
+            padding: 60px 20px;
         }
+
 
         /* IMAGEM */
 
         .hero-img {
-            flex: 1;
+            text-align: center;
         }
 
         .hero-img img {
@@ -73,11 +71,8 @@
             transform: scale(1.02);
         }
 
-        /* TEXTO */
 
-        .hero-text {
-            flex: 1;
-        }
+        /* TEXTO */
 
         .hero-text h1 {
             font-size: 55px;
@@ -92,7 +87,10 @@
             margin-bottom: 25px;
         }
 
-        /* CARD LOGIN */
+
+        /* =========================
+           LOGIN
+        ========================= */
 
         .login-box {
             background: white;
@@ -130,10 +128,14 @@
             outline: none;
         }
 
-        /* BOTÕES */
+
+        /* =========================
+           BOTÕES
+        ========================= */
 
         .botoes {
             display: flex;
+            flex-wrap: wrap;
             gap: 15px;
             margin-top: 25px;
         }
@@ -155,6 +157,7 @@
 
         .btn-login:hover {
             background: #8f0000;
+            color: white;
         }
 
         .btn-pedido {
@@ -164,139 +167,405 @@
 
         .btn-pedido:hover {
             background: black;
+            color: white;
         }
-        .login_btn{
-    display: none;
-}
+
+
+        /* BOTÃO FAZER PEDIDO ESCONDIDO */
+
+        .login_btn {
+            display: none;
+        }
+
+
+        /* =========================
+           RESPONSIVIDADE
+        ========================= */
+
+        @media (max-width: 991.98px) {
+
+            .hero {
+                padding: 40px 20px;
+            }
+
+            .hero-img {
+                margin-bottom: 30px;
+            }
+
+            .hero-text h1 {
+                font-size: 45px;
+            }
+
+            .hero-text p {
+                font-size: 20px;
+            }
+
+        }
+
+
+        /* =========================
+           CELULAR
+        ========================= */
+
+        @media (max-width: 767.98px) {
+
+            .hero {
+                padding: 30px 15px;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            .hero-text p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            .login-box {
+                padding: 20px;
+            }
+
+            .login-box h2 {
+                font-size: 24px;
+            }
+
+            .botoes {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+
+            /* =========================
+               RODAPÉ NO CELULAR
+            ========================= */
+
+            .footer-container {
+                text-align: center;
+            }
+
+            .footer-coluna {
+                align-items: center;
+            }
+
+            .footer-logo {
+                text-align: center;
+            }
+
+        }
+
+
+        /* =========================
+           CELULAR PEQUENO
+        ========================= */
+
+        @media (max-width: 575.98px) {
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .hero-text p {
+                font-size: 17px;
+            }
+
+            .hero-img img {
+                border-radius: 15px;
+            }
+
+            .login-box {
+                padding: 20px;
+            }
+
+        }
+
     </style>
 </head>
+
 
 <body>
 
 
+    <!-- =========================
+         PRODUTO
+    ========================= -->
+
     <section class="hero">
 
-        <!-- IMAGEM -->
-        <div class="hero-img">
-            <img src="img/carneequeijo2.jpg" alt="Hambúrguer Artesanal">
-        </div>
+        <div class="container">
 
-        <!-- TEXTO -->
-        <div class="hero-text">
-
-            <h1>Carne e Queijo</h1>
-
-            <p>
-                Um hambúrguer artesanal feito com pão macio levemente tostado,
-                carne bovina grelhada e uma mistura irresistível de quatro queijos:
-                muçarela, cheddar, gorgonzola e parmesão.
-            </p>
-
-            <p>
-                Finalizado com um molho especial que deixa cada mordida cremosa,
-                intensa e extremamente saborosa.
-            </p>
-
-            <!-- LOGIN -->
-        <div class="login-box">
-
-            <h2>Faça login para continuar</h2>
-
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="seu@email.com" id="email">
-            </div>
-
-            <div class="form-group">
-                <label>Senha</label>
-                <input type="password" placeholder="Sua senha" id="senha">
-            </div>
-
-            <div class="botoes">
-
-                <button class="btn btn-login" onclick="logarSenha()">
-                    Login
-                </button>
-                
-                <a href="Pedidos2.html" class="btn btn-pedido login_btn" id="pedido">
-                    Fazer Pedido
-                </a>
-
-                
+            <div class="row align-items-center g-4">
 
 
-            </div>
+                <!-- IMAGEM -->
 
-        </div>
+                <div class="col-12 col-lg-6 hero-img">
 
-        </div>
+                    <img src="img/carneequeijo2.jpg"
+                        alt="Hambúrguer Artesanal">
+
+                </div>
 
 
-    </section>
+                <!-- TEXTO -->
 
-    <!-- A partir daq começa o rodapé -->
-    <footer>
+                <div class="col-12 col-lg-6 hero-text">
 
-        <div class="container-fluid">
-                <div class="footer-container row gy-4">
+                    <h1>
+                        Carne e Queijo
+                    </h1>
 
-                    <!-- Logo -->
-                    <div class="col-12 col-md-3 footer-logo">
-                        <img src="img/Logo- fundo removido.png" alt="Arte na Chapa">
-                        <h2>ARTE NA CHAPA</h2>
-                        <p>Hamburgueria Artesanal</p>
-                    </div>
+                    <p>
+                        Um hambúrguer artesanal feito com pão macio levemente tostado,
+                        carne bovina grelhada e uma mistura irresistível de quatro queijos:
+                        muçarela, cheddar, gorgonzola e parmesão.
+                    </p>
 
-                    <!-- Institucional -->
-                    <div class="col-6 col-md-3 footer-coluna">
-                        <h3>Institucional</h3>
-                        <a href="index.html">Início</a>
-                        <a href="index.html">Cardápio</a>
-                        <a href="quemsomos2.html">Quem Somos</a>
-                        <a href="combos2.html">Combos</a>
-                        <a href="Bebidas2.html">Bebidas</a>
-                    </div>
+                    <p>
+                        Finalizado com um molho especial que deixa cada mordida cremosa,
+                        intensa e extremamente saborosa.
+                    </p>
 
-                    <!-- Contato -->
-                    <div class="col-6 col-md-3 footer-coluna">
-                        <h3>Contato</h3>
-                        <p>📍 Santa Cruz do Rio Pardo - SP</p>
-                        <p>📞 (14) 99838-7107</p>
-                        <p>🕒 Terça a Domingo</p>
-                        <p>18h às 23h</p>
-                    </div>
 
-                    <!-- Redes -->
-                    <div class="col-6 col-md-3 footer-coluna">
-                        <h3>Redes Sociais</h3>
-                        <a href="https://www.instagram.com/">Instagram</a>
-                        <a href="https://web.whatsapp.com/">WhatsApp</a>
-                        <a href="https://www.facebook.com/?locale=pt_BR">facebook</a>
+                    <!-- LOGIN -->
+
+                    <div class="login-box">
+
+                        <h2>
+                            Faça login para continuar
+                        </h2>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input type="email"
+                                placeholder="seu@email.com"
+                                id="email">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="senha">
+                                Senha
+                            </label>
+
+                            <input type="password"
+                                placeholder="Sua senha"
+                                id="senha">
+
+                        </div>
+
+
+                        <div class="botoes">
+
+                            <button class="btn btn-login"
+                                onclick="logarSenha()">
+
+                                Login
+
+                            </button>
+
+
+                            <a href="Pedidos2.html"
+                                class="btn btn-pedido login_btn"
+                                id="pedido">
+
+                                Fazer Pedido
+
+                            </a>
+
+                        </div>
+
                     </div>
 
                 </div>
+
             </div>
 
-            <div class="footer-copy">
-                © 2026 Arte na Chapa • Todos os direitos reservados.
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================= -->
+
+    <footer>
+
+        <div class="container-fluid">
+
+            <div class="footer-container row gy-4">
+
+
+                <!-- LOGO -->
+
+                <div class="col-12 col-md-3 footer-logo">
+
+                    <img src="img/Logo- fundo removido.png"
+                        alt="Arte na Chapa">
+
+                    <h2>
+                        ARTE NA CHAPA
+                    </h2>
+
+                    <p>
+                        Hamburgueria Artesanal
+                    </p>
+
+                </div>
+
+
+                <!-- INSTITUCIONAL -->
+
+                <div class="col-12 col-md-3 footer-coluna">
+
+                    <h3>
+                        Institucional
+                    </h3>
+
+                    <a href="index.html">
+                        Início
+                    </a>
+
+                    <a href="index.html">
+                        Cardápio
+                    </a>
+
+                    <a href="quemsomos2.html">
+                        Quem Somos
+                    </a>
+
+                    <a href="combos2.html">
+                        Combos
+                    </a>
+
+                    <a href="Bebidas2.html">
+                        Bebidas
+                    </a>
+
+                </div>
+
+
+                <!-- CONTATO -->
+
+                <div class="col-12 col-md-3 footer-coluna">
+
+                    <h3>
+                        Contato
+                    </h3>
+
+                    <p>
+                        Santa Cruz do Rio Pardo - SP
+                    </p>
+
+                    <p>
+                        (14) 99838-7107
+                    </p>
+
+                    <p>
+                        Terça a Domingo
+                    </p>
+
+                    <p>
+                        18h às 23h
+                    </p>
+
+                </div>
+
+
+                <!-- REDES SOCIAIS -->
+
+                <div class="col-12 col-md-3 footer-coluna">
+
+                    <h3>
+                        Redes Sociais
+                    </h3>
+
+                    <a href="https://www.instagram.com/">
+                        Instagram
+                    </a>
+
+                    <a href="https://web.whatsapp.com/">
+                        WhatsApp
+                    </a>
+
+                    <a href="https://www.facebook.com/?locale=pt_BR">
+                        Facebook
+                    </a>
+
+                </div>
+
             </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-copy">
+
+            © 2026 Arte na Chapa • Este é um site institucional
+            sem fins lucrativos, desenvolvido para fins acadêmicos.
+            As informações apresentadas podem conter erros.
+
+        </div>
 
     </footer>
+
+
+
+    <!--  JAVASCRIPT -->
+
     <script>
+
         function logarSenha() {
-            var emailLog = document.getElementById('email').value
-            var senhaLog = document.getElementById('senha').value
+
+            var emailLog = document.getElementById('email').value;
+            var senhaLog = document.getElementById('senha').value;
 
             if (emailLog == "arte" && senhaLog == "nachapa") {
+
                 alert('Login Efetuado');
+
                 document.getElementById('pedido').style.display = 'block';
+
             } else {
+
                 alert('Login Incorreto');
 
             }
+
         }
+
     </script>
 
+    <!-- Início do widget do VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget({
+            rootPwa: 'https://vlibras.gov.br/app'
+        });
+    </script>
+    <!-- Fim do widget do VLibras -->
 </body>
 
 </html>

@@ -36,18 +36,10 @@
         }
 
         .conteiner_bebidas {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
             padding: 30px;
-            width: 100%;
-            box-sizing: border-box;
-
         }
 
         .itens_cont {
-            width: 23%;
             background-color: #970101;
             border-radius: 10px;
             height: 325px;
@@ -102,6 +94,41 @@
             background: rgba(155, 0, 4);
             transform: scale(1.02);
         }
+
+        /* ===== Responsividade ===== */
+        @media (max-width: 767.98px) {
+            .banner {
+                padding: 40px 15px;
+            }
+
+            .banner h1 {
+                font-size: 42px;
+                letter-spacing: 3px;
+            }
+
+            .itens_cont {
+                height: 300px;
+            }
+
+            .itens_cont:hover {
+                height: 420px;
+            }
+
+            button {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .banner h1 {
+                font-size: 32px;
+                letter-spacing: 1px;
+            }
+
+            button {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 
@@ -113,49 +140,59 @@
         </div>
     </header>
     <main>
-        <div class="conteiner_bebidas">
-            <div class="itens_cont">
-                <img src="img/agua.png">
+        <div class="container conteiner_bebidas">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="itens_cont">
+                        <img src="img/agua.png">
 
 
-                <h2>ÁGUA</h2>
-                <p>Crystal sem gás R$3,00</p>
-                <p>Crystal com gás R$3,00</p>
+                        <h2>ÁGUA</h2>
+                        <p>Crystal sem gás R$3,00</p>
+                        <p>Crystal com gás R$3,00</p>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="itens_cont">
+                        <img src="img/refrigerantes.png">
+
+                        <h2>REFRIGERANTES</h2>
+                        <p>Coca-Cola R$7,00</p>
+                        <p>Guaraná Antartica R$6,00</p>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="itens_cont">
+                        <img src="img/sucos.png">
+
+                        <h2>SUCOS</h2>
+                        <p>Del Valle 290ml R$6,00</p>
+                        <p>Prats 330ml R$7,00</p>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="itens_cont">
+                        <img src="img/long.png">
+
+                        <h2>LONG NECK</h2>
+                        <p>Heineken R$10,00</p>
+                        <p>Sol R$7,00</p>
+
+                    </div>
+                </div>
 
             </div>
-
-            <div class="itens_cont">
-                <img src="img/refrigerantes.png">
-
-                <h2>REFRIGERANTES</h2>
-                <p>Coca-Cola R$7,00</p>
-                <p>Guaraná Antartica R$6,00</p>
-
-            </div>
-
-            <div class="itens_cont">
-                <img src="img/sucos.png">
-
-                <h2>SUCOS</h2>
-                <p>Del Valle 290ml R$6,00</p>
-                <p>Prats 330ml R$7,00</p>
-
-            </div>
-
-            <div class="itens_cont">
-                <img src="img/long.png">
-
-                <h2>LONG NECK</h2>
-                <p>Heineken R$10,00</p>
-                <p>Sol R$7,00</p>
-
-            </div>
-
         </div>
     </main>
     
     <div style="text-align: center;">
-    <a href="Pedidos2.html">
+    <a href="loginparacont.html">
         <button>Fazer pedido</button>
     </a>
     </div>
@@ -186,9 +223,9 @@
                     <!-- Contato -->
                     <div class="col-6 col-md-3 footer-coluna">
                         <h3>Contato</h3>
-                        <p>📍 Santa Cruz do Rio Pardo - SP</p>
-                        <p>📞 (14) 99838-7107</p>
-                        <p>🕒 Terça a Domingo</p>
+                        <p> Santa Cruz do Rio Pardo - SP</p>
+                        <p> (14) 99838-7107</p>
+                        <p> Terça a Domingo</p>
                         <p>18h às 23h</p>
                     </div>
 
@@ -204,12 +241,29 @@
             </div>
 
             <div class="footer-copy">
-                © 2026 Arte na Chapa • Todos os direitos reservados.
+                © 2026 Arte na Chapa • Este é um site institucional
+                sem fins lucrativos, desenvolvido para fins acadêmicos.
+                As informações apresentadas podem conter erros.
             </div>
 
         
     </footer>
-     
+      
+    
+<!-- Início do widget do VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget({
+            rootPwa: 'https://vlibras.gov.br/app'
+        });
+    </script>
+    <!-- Fim do widget do VLibras -->
     
 </body>
 

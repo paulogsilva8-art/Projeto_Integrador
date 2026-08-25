@@ -98,15 +98,6 @@ body{
     background:#8f0000;
 }
 
-.btn-pedido{
-    background:#222;
-    color:white;
-}
-
-.btn-pedido:hover{
-    background:black;
-}
-
 .login_btn{
     display:none;
 }
@@ -134,11 +125,11 @@ body{
 
         <button class="btn btn-login" onclick="logarSenha()">
             Login
+            <a href="Pedidos2.html" class="btn btn-pedido login_btn" id="pedido"></a>
         </button>
 
-        <a href="Pedidos2.html" class="btn btn-pedido login_btn" id="pedido">
-            Fazer Pedido
-        </a>
+
+
 
     </div>
 
@@ -154,8 +145,9 @@ function logarSenha(){
     if(emailLog == "arte" && senhaLog == "nachapa"){
 
         alert("Login efetuado!");
+        window.location.href = "Pedidos2.html"
 
-        document.getElementById("pedido").style.display = "block";
+        
 
     }else{
 
@@ -166,6 +158,21 @@ function logarSenha(){
 }
 
 </script>
+
+    <!-- Início do widget do VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget({
+            rootPwa: 'https://vlibras.gov.br/app'
+        });
+    </script>
+    <!-- Fim do widget do VLibras -->
 
 </body>
 </html>
