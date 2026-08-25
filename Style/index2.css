@@ -1,0 +1,304 @@
+/* Remove margens e paddings padrões do navegador */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Container principal do menu (agora é uma navbar Bootstrap) ===== */
+
+.menu {
+    background-color: #b30000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px 20px;
+}
+
+/* Logo dentro da navbar */
+.logo-item img {
+    height: 80px;
+    width: auto;
+}
+
+.item {
+    color: antiquewhite;
+}
+
+.item .nav-link {
+    font-size: 28px;
+    color: antiquewhite;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.item .nav-link:hover {
+    color: #222;
+}
+
+.carrinho img {
+    width: 50px;
+}
+
+/* Ícone do botão hambúrguer (deixa visível no fundo vermelho) */
+.navbar-toggler {
+    border-color: antiquewhite;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(250, 235, 215, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.localizacao {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITULO */
+
+.titulo-local {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.titulo-local h3 {
+    color: #B30000;
+    font-size: clamp(22px, 4vw, 35px);
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+}
+
+.titulo-local h1 {
+    color: #111;
+    font-size: clamp(32px, 7vw, 90px);
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 3px;
+}
+
+/* Linha decorativa */
+.linha {
+    width: 350px;
+    max-width: 60%;
+    height: 4px;
+    background: #B30000;
+    margin: 15px auto;
+    border-radius: 20px;
+}
+
+
+/* Container principal da localização */
+.container-mapa {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+    background: #B30000;
+    border-radius: 35px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+
+/* Card das informações */
+.info-local {
+    background: #8f0000;
+    border-radius: 25px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* Nome do local */
+.info-local h2 {
+    color: white;
+    font-size: clamp(20px, 3vw, 30px);
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
+}
+
+.info-local span {
+    color: #ffd000;
+}
+
+/* Texto do endereço */
+.info-local p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Destaques amarelos */
+.avaliacao {
+    color: #ffd000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Botão do maps */
+.btn-chegar {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    max-width: 100%;
+    padding: 12px;
+    background: white;
+    color: #B30000;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+/* Hover do botão */
+.btn-chegar:hover {
+    transform: scale(1.03);
+}
+
+/* mapa (o tamanho agora é controlado pela classe .ratio do Bootstrap) */
+.mapa {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    border: none;
+}
+
+/*tres partes principais*/
+.topo {
+    width: 100%;
+    padding: 50px 0 0;
+}
+
+.img a {
+    text-decoration: none;
+    color: antiquewhite;
+    display: block;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 320 / 420;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.img img:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Área principal do cardápio */
+.cardapio {
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+/* links */
+.lanches a {
+    overflow: hidden;
+    display: block;
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: 0.4s ease;
+}
+
+/* imagens dos lanches */
+.lanches img {
+    width: 100%;
+    height: auto;
+    max-width: 350px; 
+    aspect-ratio: 350 / 230;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    margin: 0 auto;   
+}
+
+/* hover*/
+.lanches a:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Parágrafos com a fonte padrão do site */
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* H2 com a fonte padrão do site */
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* H3 com a fonte padrão do site */
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Banner atrás dos lanches / carrossel */
+.art {
+    padding-top: 50px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ===== Ajustes finos por tamanho de tela ===== */
+@media (max-width: 991.98px) {
+    .item .nav-link {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    .carrinho {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .carrinho img {
+        width: 40px;
+    }
+
+    .info-local {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .logo-item img {
+        height: 60px;
+    }
+
+    .info-local h2 {
+        margin-bottom: 15px;
+    }
+
+    .info-local p {
+        margin-bottom: 20px;
+    }
+}
